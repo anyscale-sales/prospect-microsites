@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duolingo × Anyscale</title>
+  <link rel="icon" type="image/png" href="https://anyscale-sales.github.io/prospect-microsites/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .prose h1,.prose h2 { font-size:1.5rem; font-weight:700; margin:2rem 0 1rem; color:#111827; }
+    .prose h3 { font-size:1.125rem; font-weight:600; margin:1.5rem 0 0.5rem; color:#1f2937; }
+    .prose p { margin:1rem 0; }
+    .prose ul { list-style:disc; padding-left:1.5rem; margin:1rem 0; }
+    .prose li { margin:0.4rem 0; }
+    .prose strong { font-weight:600; }
+    .prose code { background:#f1f5f9; padding:0.1rem 0.35rem; border-radius:0.25rem; font-size:0.85em; font-family:monospace; }
+    .prose pre { background:#0f172a; padding:1.25rem; border-radius:0.75rem; overflow-x:auto; margin:1.25rem 0; }
+    .prose pre code { background:none; padding:0; color:#e2e8f0; font-size:0.85em; }
+    .prose blockquote { border-left:3px solid #3b82f6; padding-left:1rem; color:#6b7280; font-style:italic; margin:1.25rem 0; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="https://anyscale-sales.github.io/prospect-microsites/logo.png" alt="Anyscale" class="h-7 w-auto" />
+      <span class="font-semibold text-sm text-gray-900">Duolingo × Anyscale</span>
+    </div>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#opportunity" class="text-gray-500 hover:text-gray-900 transition-colors">Opportunity</a>
+      <a href="#deep-dives" class="text-gray-500 hover:text-gray-900 transition-colors">Deep Dives</a>
+      <a href="#architecture" class="text-gray-500 hover:text-gray-900 transition-colors">Architecture</a>
+      <a href="#code" class="text-gray-500 hover:text-gray-900 transition-colors">Code</a>
+      <a href="#next-steps" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-full transition-colors font-medium">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative pt-32 pb-28 bg-gray-950 text-white overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(59,130,246,0.25),transparent)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_60%,rgba(99,102,241,0.15),transparent)]"></div>
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-1.5 text-sm mb-8 backdrop-blur-sm">
+      <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+      Personalized for Duolingo
+    </div>
+    <h1 class="text-5xl md:text-7xl font-bold leading-none tracking-tight mb-6 max-w-4xl">Duolingo × Anyscale: Elevating LLM Efficiency Together</h1>
+    <p class="text-xl md:text-2xl text-blue-100/80 mb-10 max-w-2xl leading-relaxed">Harnessing distributed LLM evaluation and elastic batch pipelines to refine language learning, paving the way for seamless, scalable inference capabilities.</p>
+    <div class="flex flex-wrap gap-4">
+      <a href="#opportunity" class="inline-flex items-center px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-semibold transition-colors">
+        Explore the opportunity →
+      </a>
+      <a href="#next-steps" class="inline-flex items-center px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg font-semibold transition-colors backdrop-blur-sm">
+        Book a demo
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- POV / Opportunity -->
+<section id="opportunity" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+      <div class="lg:col-span-2">
+        <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">The Opportunity</p>
+        <div class="prose text-gray-700 leading-relaxed" id="pov-content"></div>
+      </div>
+      <div class="space-y-8 lg:pt-8">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Primary Use Case</p>
+          <p class="font-medium text-gray-800"> Distributed LLM evaluation/tuning and elastic batch pipelines (data prep + training) with a path to scalable inference</p>
+        </div>
+        
+        <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
+          <p class="text-sm font-semibold text-blue-800 mb-1">Built on Ray</p>
+          <p class="text-xs text-blue-600 leading-relaxed">The unified open-source framework for distributed AI — data processing, training, and serving at any scale.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Posts -->
+<section id="deep-dives" class="py-24 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Deep Dives</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Technical Guides for Your Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(0)">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 1 · 5 min read</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Duolingo × Anyscale: A Technical Blueprint for Distributed LLM Evaluation/Tuning and Elastic Batch Pipelines</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how Duolingo and Anyscale could collaborate to enhance distributed LLM evaluation and tuning, enabling scalable inference for future language learning innovations.</p>
+      <span class="text-sm font-medium text-blue-600" id="blog-toggle-0">Read article ↓</span>
+      <div id="blog-body-0" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
+    </div>
+  
+
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(1)">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 2 · 5 min read</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Duolingo Could Solve Distributed LLM Evaluation and Elastic Batch Pipelines with Anyscale</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how Duolingo and Anyscale could transform the landscape of distributed LLM evaluation and elastic batch pipelines to facilitate scalable inference.</p>
+      <span class="text-sm font-medium text-blue-600" id="blog-toggle-1">Read article ↓</span>
+      <div id="blog-body-1" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
+    </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- Architecture -->
+<section id="architecture" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Recommended Architecture</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Your Reference Architecture</h2>
+    <p class="text-gray-500 max-w-2xl mb-12 leading-relaxed">Duolingo and Anyscale are collaborating to architect a scalable solution for distributed LLM evaluation and tuning, leveraging Ray for dynamic workload management. This architecture integrates elastic batch pipelines for data preparation and model training, alongside scalable inference capabilities to enhance feature delivery across Duolingo's platform.</p>
+    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 overflow-x-auto">
+      <div id="mermaid-diagram" class="flex justify-center min-h-[120px] items-center"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Code Examples -->
+<section id="code" class="py-24 bg-gray-950">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">Getting Started</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Curated Code Examples</h2>
+    <p class="text-gray-400 mb-12 max-w-2xl leading-relaxed">
+      Production-ready templates from the Anyscale library, selected for your use case.
+      Clone and run in minutes on Anyscale.
+    </p>
+    <div class="space-y-6">
+      
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Fine-tune LLMs (Llama, Mistral)</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template streamlines Duolingo's distributed LLM evaluation and tuning processes by leveraging Anyscale's scalable infrastructure. By replacing cumbersome manual infrastructure management with Ray's powerful automation tools, Duolingo's engineering team can focus on optimizing their language models with elastic batch pipelines and scalable inference, accelerating their deployment of new features.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/fine-tune-llm_v2" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Duolingo's current infrastructure setup for LLM tuning
+import multiprocessing
+import boto3
+import subprocess
+import os
+import time
+
+# Manual worker setup
+workers = []
+for i in range(4):
+    try:
+        worker = subprocess.Popen(['python', 'worker.py'], stdout=subprocess.PIPE)
+        workers.append(worker)
+    except Exception as e:
+        print(f'Error starting worker {i}: {e}')
+
+# Manual checkpointing and error handling
+for worker in workers:
+    try:
+        worker.wait()
+        if worker.returncode != 0:
+            raise RuntimeError(f'Worker failed with code {worker.returncode}')
+    except Exception as e:
+        print(f'Error in worker: {e}')
+        # Manual retry logic
+        time.sleep(5)
+        # Restart worker
+
+# Manual S3 upload
+s3 = boto3.client('s3')
+try:
+    s3.upload_file('checkpoint.pkl', 'duolingo-bucket', 'checkpoint.pkl')
+except Exception as e:
+    print(f'Error uploading to S3: {e}')</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Duolingo's streamlined setup with Anyscale and Ray
+import ray
+from ray.train import TorchTrainer
+from ray.air.config import ScalingConfig
+
+# Define distributed training with Ray
+@ray.remote
+def train_model(config):
+    # Model training logic
+    pass
+
+# Configuring the trainer
+trainer = TorchTrainer(
+    train_loop_per_worker=train_model,
+    scaling_config=ScalingConfig(num_workers=8, use_gpu=True)  # 8 GPUs, zero config changes
+)
+
+# Start training with automatic checkpointing
+results = trainer.fit()  # auto-checkpoints, no manual S3 writes
+
+# Duolingo can now easily scale and manage training jobs</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Offline Batch LLM Inference at Scale</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template enables Duolingo to efficiently manage distributed LLM evaluation and tuning, as well as elastic batch pipelines for data preparation and training. By leveraging Anyscale's scalable infrastructure, Duolingo can streamline its machine learning workflows, reducing manual overhead and improving reliability, with a clear path to scalable inference.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/batch-llm" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Duolingo's current setup for scaling LLM evaluation
+import multiprocessing
+import boto3
+import subprocess
+import os
+import time
+
+# Manually manage workers
+def worker_task(data_chunk):
+    try:
+        # Simulate processing
+        result = process_data(data_chunk)
+    except Exception as e:
+        print(f&quot;Error processing data: {e}&quot;)
+        return None
+    return result
+
+# Manual job queue and retry
+job_queue = multiprocessing.Queue()
+results = []
+for data_chunk in data:
+    job_queue.put(data_chunk)
+
+while not job_queue.empty():
+    data_chunk = job_queue.get()
+    result = worker_task(data_chunk)
+    if result is None:
+        job_queue.put(data_chunk)  # Retry
+    else:
+        results.append(result)
+
+# Manual checkpoint to disk
+with open('checkpoint.txt', 'w') as f:
+    for result in results:
+        f.write(f&quot;{result}\n&quot;)</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Duolingo's enhanced setup using Anyscale and Ray
+import ray
+from ray import tune
+
+# Define remote task with Ray
+@ray.remote
+def worker_task(data_chunk):
+    # Simulate processing
+    return process_data(data_chunk)
+
+# Initialize Ray
+ray.init()
+
+# Distribute tasks across multiple workers with fault tolerance
+futures = [worker_task.remote(data_chunk) for data_chunk in data]
+results = ray.get(futures)  # auto-retries, no manual job queue
+
+# Use Ray Tune for hyperparameter tuning
+analysis = tune.run(
+    my_trainable_function,
+    config={&quot;param1&quot;: tune.grid_search([1, 2, 3])},
+    resources_per_trial={&quot;cpu&quot;: 2, &quot;gpu&quot;: 1},  # 8 GPUs, zero config changes
+    scheduler=tune.schedulers.ASHA(),
+    checkpoint_at_end=True  # auto-checkpoints, no manual S3 writes
+)</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">End-to-End LLM Workflow</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template provides Duolingo's engineering team with a streamlined approach to distributed LLM evaluation, tuning, and elastic batch pipelines on Anyscale. By leveraging Ray's capabilities, Duolingo can efficiently manage data preparation and training processes with scalable inference, reducing complexity and improving reliability.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/e2e-llm-workflows" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Duolingo's current setup for scaling LLM evaluation
+import multiprocessing
+import boto3
+import subprocess
+import os
+
+def worker_task(data_chunk):
+    try:
+        # Process data
+        result = process_data(data_chunk)
+        # Save checkpoint
+        with open(f'/tmp/checkpoint_{os.getpid()}.pkl', 'wb') as f:
+            pickle.dump(result, f)
+    except Exception as e:
+        print(f'Error processing data: {e}')
+        # Retry logic
+        retry_task(data_chunk)
+
+# Manual job queue management
+job_queue = multiprocessing.Queue()
+for data in data_chunks:
+    job_queue.put(data)
+
+# Spin up workers manually
+workers = []
+for _ in range(4):
+    p = multiprocessing.Process(target=worker_task, args=(job_queue.get(),))
+    p.start()
+    workers.append(p)
+
+for worker in workers:
+    worker.join()</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Duolingo's optimized LLM workflow with Ray on Anyscale
+import ray
+from ray import tune
+
+@ray.remote
+def process_data(data_chunk):
+    # auto-checkpoints, no manual S3 writes
+    return process_data_logic(data_chunk)
+
+# Distribute tasks across 8 workers
+results = ray.get([process_data.remote(chunk) for chunk in data_chunks])
+
+# Automated hyperparameter tuning
+search_space = {'lr': tune.uniform(0.001, 0.1)}
+scheduler = tune.schedulers.ASHA()
+tune.run(train_model, config=search_space, scheduler=scheduler)  # auto-retries, managed state
+
+# Ray handles scaling automatically, zero config changes</code></pre>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- Next Steps -->
+<section id="next-steps" class="py-24 bg-blue-600 text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-200 mb-4">Next Steps</p>
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+      Ready to accelerate Duolingo's AI journey?
+    </h2>
+    <p class="text-xl text-blue-100 mb-14 max-w-2xl mx-auto leading-relaxed">
+      Join leading AI teams who scaled from prototype to production with Anyscale.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+      <a href="https://www.anyscale.com/contact" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Talk to an Engineer</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">Get a technical walkthrough of your specific use case</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Schedule a call →</span>
+      </a>
+      <a href="https://console.anyscale.com/" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Start Free Trial</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">Run your first workload on Anyscale today — no setup required</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Get started →</span>
+      </a>
+      <a href="https://www.anyscale.com/demo" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Book a Demo</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">See how teams like yours build and scale with Ray on Anyscale</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Book now →</span>
+      </a>
+    </div>
+    <p class="text-blue-200 text-sm">
+      Questions? Email <a href="mailto:sales@anyscale.com" class="underline hover:text-white">sales@anyscale.com</a>
+    </p>
+  </div>
+</section>
+
+<script>
+  // Blog post content
+  window.__blog0 = "# Duolingo × Anyscale: A Technical Blueprint for Distributed LLM Evaluation/Tuning and Elastic Batch Pipelines\n\n## Introduction to the Duolingo × Anyscale Vision\nIn the rapidly evolving world of language learning technology, Duolingo stands as a leader, continuously pushing the boundaries of how users engage with languages. As the company expands its capabilities, the integration of Large Language Models (LLMs) becomes increasingly pivotal. This proposal envisions how Duolingo could leverage Anyscale's Ray platform to enhance distributed LLM evaluation and tuning, while building elastic batch pipelines for data preparation and training with a clear path to scalable inference.\n\n## The Duolingo Challenge: Scaling LLM Workloads \nDuolingo's current infrastructure, heavily reliant on a Python-centric ML stack and cloud computing, faces increasing challenges with the intensity of LLM workloads. As the company integrates these models into more product features, the existing mix of batch data tooling and custom services for inference might hit scalability and efficiency walls. This is where a partnership with Anyscale could provide transformative solutions.\n\n## How Duolingo and Anyscale Would Handle Data at Scale\nAnyscale, with its open-source platform Ray, offers a robust framework for distributed computing, perfectly aligning with Duolingo's needs for scalable data processing. By employing Ray, Duolingo could efficiently manage complex data preparation workflows and training tasks across distributed systems.\n\nFor instance, Ray's ability to seamlessly handle tasks distributed across a cluster would empower Duolingo to preprocess massive datasets concurrently. This could optimize data pipelines, ensuring the language models are trained on the most comprehensive and up-to-date data available.\n\n```python\nimport ray\n\n# Initialize Ray\nray.init()\n\n@ray.remote\ndef preprocess_data(data_chunk):\n    # Simulated data preprocessing task\n    return [datum.upper() for datum in data_chunk]\n\n# Simulated large dataset split into chunks\nlarge_dataset = [\"hello\", \"world\", \"duolingo\", \"anyscale\"] * 1000\nchunks = [large_dataset[i:i + 100] for i in range(0, len(large_dataset), 100)]\n\n# Distribute preprocessing tasks\nprocessed_chunks = ray.get([preprocess_data.remote(chunk) for chunk in chunks])\n\n# Flatten the processed data\nprocessed_data = [item for sublist in processed_chunks for item in sublist]\n\n# This distributed preprocessing would enable Duolingo to efficiently prepare data for LLM training.\n```\n\n## Enhancing Duolingo's LLM Evaluation and Tuning\nRay's flexible architecture would also be instrumental in the evaluation and tuning of LLMs. Duolingo could leverage Ray's distributed task scheduling to parallelize model evaluation across multiple nodes. This would significantly speed up the process of hyperparameter tuning and model evaluation, enabling quicker iterations and improvements in model performance.\n\nBy orchestrating these processes through Ray, Duolingo could ensure that models are not only trained efficiently but also evaluated and fine-tuned with the precision required to improve user experiences across their platform.\n\n## Path to Scalable Inference for Duolingo and Anyscale\nLooking towards scalable inference, Ray's capabilities would allow Duolingo to deploy models in a manner that can elastically scale with user demand. As more users interact with Duolingo's language learning tools, the system would automatically adjust resources to maintain optimal performance and responsiveness.\n\nThis potential collaboration could lead to the development of a seamless inference pipeline, minimizing latency and maximizing throughput. Duolingo could thus provide real-time, intelligent interactions to learners globally, significantly enhancing the overall user experience.\n\n## Proposed Next Steps for Duolingo and Anyscale\n1. **Initial Assessment and Pilot Project:** Duolingo and Anyscale could initiate a collaborative assessment to identify specific LLM workload challenges and design a pilot project to test Ray's capabilities in a controlled environment.\n\n2. **Integration and Testing:** Building upon the pilot's outcomes, the teams could work to integrate Ray into Duolingo's existing ML stack, conducting thorough testing to ensure compatibility and performance improvements.\n\n3. **Optimization and Scaling:** Finally, Duolingo and Anyscale would focus on optimizing the distributed systems for peak performance and scaling the solution across all relevant product features, ensuring robust and efficient operations as demand grows.\n\nThis envisioned partnership could redefine how Duolingo approaches LLM workloads, setting a new standard for language learning technologies in the industry.";
+    window.__blog1 = "## The Duolingo × Anyscale Vision\n\nDuolingo, a leader in language education technology, is faced with the challenge of evolving its Machine Learning (ML) stack to support increasing workloads from its large language models (LLMs). With its Python-centric ML stack, likely leveraging PyTorch, Duolingo is exploring options to enhance its distributed LLM evaluation, tuning, and elastic batch pipelines. Anyscale, with its robust Ray platform, could provide the ideal solution by enabling scalable and efficient data processing and model inference. This collaboration could revolutionize the way Duolingo handles its ML operations, paving the way for more responsive and adaptive language learning features.\n\n## How Duolingo and Anyscale Would Handle Data at Scale\n\nDuolingo's current infrastructure involves cloud computing combined with batch data tooling and custom services for model inference. As LLM workloads intensify, the need for a more scalable and efficient solution becomes apparent. Anyscale's Ray framework could empower Duolingo to distribute LLM evaluation and tuning across multiple nodes seamlessly. This approach would allow for parallel processing of large datasets, minimizing bottlenecks and accelerating model training times.\n\nFor instance, Duolingo could leverage Ray's distributed data processing capabilities to optimize its data preparation workflows. Consider a scenario where Duolingo needs to preprocess large volumes of language data for training and evaluation. Using Ray, this task could be distributed across a cluster, reducing the time and resources required significantly.\n\n## Implementing Elastic Batch Pipelines with Duolingo and Anyscale\n\nElasticity in data processing and model training would be a game-changer for Duolingo. Anyscale's Ray could enable elastic scaling of resources based on workload intensity. This flexibility is crucial for Duolingo, where language models may require varying computational power depending on the complexity of the task.\n\nHere's a potential Python example using Ray to illustrate how Duolingo could implement elastic batch pipelines:\n\n```python\nimport ray\n\n# Initialize Ray\nray.init()  # Start Ray cluster\n\n@ray.remote\ndef preprocess_data(batch):\n    # Simulate data preprocessing\n    return f\"Processed {batch}\"\n\nbatches = [f\"batch_{i}\" for i in range(10)]  # Simulate data batches\n\n# Distribute preprocessing tasks across the cluster\nfutures = [preprocess_data.remote(batch) for batch in batches]\n\n# Gather results\nresults = ray.get(futures)\nprint(results)  # Outputs: ['Processed batch_0', 'Processed batch_1', ..., 'Processed batch_9']\n```\n\n*In this example, Ray is used to distribute data preprocessing tasks across a cluster of nodes, allowing Duolingo to manage and process language data more efficiently.*\n\n## Duolingo × Anyscale: A Path to Scalable Inference\n\nScalable inference is another critical aspect that Duolingo could address with Anyscale. By leveraging Ray's capabilities, Duolingo could deploy LLMs that dynamically adjust resource allocation based on user demand. This would ensure a consistent and responsive user experience, even as the number of active users fluctuates.\n\nAnyscale's framework could also support Duolingo in implementing more sophisticated model serving architectures, enabling real-time inference with minimal latency. Such enhancements would not only improve the performance of existing features but also open the door for innovative language learning experiences.\n\n## Proposed Next Steps for Duolingo and Anyscale\n\n1. **Pilot Integration**: Duolingo and Anyscale could initiate a pilot project to integrate Ray into a specific component of Duolingo's ML stack, focusing on distributed LLM evaluation.\n\n2. **Performance Benchmarking**: Conduct a series of benchmarks to evaluate the performance improvements in data processing and model inference, identifying key areas for further optimization.\n\n3. **Scalability Workshop**: Host a collaborative workshop to explore advanced features of Ray and Anyscale, equipping Duolingo's engineering team with the skills required to scale operations effectively.\n";
+
+  // Render POV markdown
+  document.getElementById('pov-content').innerHTML = marked.parse("In the rapidly evolving landscape of artificial intelligence, companies are increasingly harnessing the power of AI to transform their operations and deliver unprecedented value to users. As AI technologies mature, organizations like Duolingo are poised to redefine their industry standing by embracing AI at the core of their strategic vision. Duolingo's ambitious \"AI-first\" transformation is set to parallel their earlier successful mobile-first pivot, aiming to revolutionize language learning through innovative AI-driven solutions.\n\n## The Duolingo Scale Challenge\n\nDuolingo's engineering team is navigating a complex landscape of infrastructure challenges as they integrate AI deeply into their operations. With a Python-centric ML stack, likely using PyTorch, and a robust AWS-based infrastructure, Duolingo is well-equipped for many of its current needs. However, the rapid growth and increasing reliance on advanced models, especially large language models (LLMs), present significant hurdles. These challenges include the escalating computational costs associated with large-scale model training and real-time inference, as well as the intricacies of managing a diverse portfolio of distributed machine learning workloads. Furthermore, the continuous demand for accelerated experimentation and iteration cycles to maintain product leadership adds layers of complexity to their engineering efforts.\n\nThe pressing need for efficient distributed LLM evaluation and tuning, along with the capability to run elastic batch pipelines for data preparation and training, underscores the importance of scalable infrastructure. Duolingo's focus on maintaining operational efficiency and scaling educational impact necessitates a robust solution that can handle increasing workload intensity across their product features.\n\n## What Duolingo and Anyscale Could Build Together\n\nA partnership between Duolingo and Anyscale could address these infrastructure challenges by leveraging Anyscale's expertise in scalable distributed computing. Together, they could explore the potential of Ray, an open-source framework designed to simplify the development of distributed applications. This collaboration could focus on enhancing Duolingo's AI capabilities through the use of Ray Data for efficient data processing, Ray Train for distributed model training, and Ray Serve for scalable model serving.\n\nBy integrating Ray into Duolingo's existing infrastructure, the partnership would facilitate the development of a robust AI platform that supports distributed LLM evaluation and tuning. This would enable Duolingo to conduct large-scale experiments and iterate rapidly on their models, ensuring continuous innovation and product leadership in the language learning space. The joint effort could result in an infrastructure that dynamically scales with demand, optimizing computational resource utilization and reducing operational costs.\n\n## The Duolingo × Anyscale Architecture\n\nIn this proposed collaboration, Duolingo's team would operate on a seamlessly integrated Anyscale architecture that leverages Ray's capabilities. The architecture would be designed to support distributed ML workloads, allowing Duolingo to efficiently manage the increasing intensity of LLM workloads. Ray Data would be employed to streamline data preprocessing tasks, enabling Duolingo to handle large volumes of data with ease. Ray Train would provide the infrastructure needed for distributed model training, allowing Duolingo to scale their training operations across multiple nodes, thereby reducing training time and costs.\n\nMoreover, Ray Serve would be utilized to deploy models at scale, ensuring that Duolingo can meet the demands of real-time inference across its diverse product features. This architecture would provide Duolingo with the agility to experiment quickly and deploy new AI-driven features, maintaining their competitive edge in the technology industry.\n\n## Duolingo on Anyscale: What Becomes Possible\n\nBy partnering with Anyscale, Duolingo could unlock a myriad of possibilities that align with their strategic objectives. The enhanced infrastructure would empower Duolingo to scale their educational impact by delivering highly personalized learning experiences to millions of users worldwide. The ability to conduct distributed LLM evaluation and tuning efficiently would enable Duolingo to refine their models continuously, improving the accuracy and effectiveness of their language learning platform. Ultimately, this partnership could position Duolingo as a leader in the AI-driven education sector, setting new benchmarks for personalized and scalable learning experiences.");
+
+  // Blog toggle
+  function toggleBlog(i) {
+    const body = document.getElementById('blog-body-' + i);
+    const toggle = document.getElementById('blog-toggle-' + i);
+    const blogData = [window.__blog0, window.__blog1];
+    if (body.classList.contains('hidden')) {
+      if (!body.dataset.rendered) {
+        body.innerHTML = marked.parse(blogData[i] || '');
+        body.dataset.rendered = '1';
+        // Re-run hljs on any code blocks inside
+        body.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
+      }
+      body.classList.remove('hidden');
+      toggle.textContent = 'Collapse ↑';
+    } else {
+      body.classList.add('hidden');
+      toggle.textContent = 'Read article ↓';
+    }
+  }
+
+  // Syntax highlight code examples
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code').forEach(el => {
+      try { hljs.highlightElement(el); } catch(e) {}
+    });
+  });
+
+  // Mermaid — use JS API to avoid HTML-entity encoding issues
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: 'base',
+    flowchart: {
+      nodeSpacing: 30,
+      rankSpacing: 40,
+      padding: 6,
+      useMaxWidth: true,
+    },
+    themeVariables: {
+      primaryColor: '#EFF6FF',
+      primaryTextColor: '#1E40AF',
+      primaryBorderColor: '#93C5FD',
+      lineColor: '#60A5FA',
+      secondaryColor: '#F0FDF4',
+      tertiaryColor: '#FEF3C7',
+      fontSize: '11px',
+      nodePadding: '4',
+    },
+  });
+  (async () => {
+    const el = document.getElementById('mermaid-diagram');
+    if (!el) return;
+    try {
+      const diagram = "flowchart TD\n  subgraph DataSources\n    dataIngestion[Data Ingestion Layer]\n  end\n  subgraph RayComponents\n    rayData[Ray Data]\n    rayTrain[Ray Train]\n    rayServe[Ray Serve]\n  end\n  subgraph ModelManagement\n    modelReg[Model Registry Storage]\n  end\n  subgraph Serving\n    inferenceEndpoint[Serving Inference Endpoint]\n  end\n  subgraph Consumers\n    downstreamApps[Downstream Applications]\n  end\n  dataIngestion --> rayData\n  rayData --> rayTrain\n  rayTrain --> modelReg\n  modelReg --> rayServe\n  rayServe --> inferenceEndpoint\n  inferenceEndpoint --> downstreamApps";
+      const { svg } = await mermaid.render('arch', diagram);
+      el.innerHTML = svg;
+      const svgEl = el.querySelector('svg');
+      svgEl.removeAttribute('height');
+      svgEl.setAttribute('width', '100%');
+      svgEl.style.maxWidth = '100%';
+      svgEl.style.height = 'auto';
+    } catch (e) {
+      el.innerHTML = '<p style="color:#ef4444;font-size:0.875rem">Diagram rendering failed: ' + e.message + '</p>';
+    }
+  })();
+</script>
+</body>
+</html>
