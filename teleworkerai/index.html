@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>teleworker.ai × Anyscale</title>
+  <link rel="icon" type="image/png" href="https://anyscale-sales.github.io/prospect-microsites/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .prose h1,.prose h2 { font-size:1.5rem; font-weight:700; margin:2rem 0 1rem; color:#111827; }
+    .prose h3 { font-size:1.125rem; font-weight:600; margin:1.5rem 0 0.5rem; color:#1f2937; }
+    .prose p { margin:1rem 0; }
+    .prose ul { list-style:disc; padding-left:1.5rem; margin:1rem 0; }
+    .prose li { margin:0.4rem 0; }
+    .prose strong { font-weight:600; }
+    .prose code { background:#f1f5f9; padding:0.1rem 0.35rem; border-radius:0.25rem; font-size:0.85em; font-family:monospace; }
+    .prose pre { background:#0f172a; padding:1.25rem; border-radius:0.75rem; overflow-x:auto; margin:1.25rem 0; }
+    .prose pre code { background:none; padding:0; color:#e2e8f0; font-size:0.85em; }
+    .prose blockquote { border-left:3px solid #3b82f6; padding-left:1rem; color:#6b7280; font-style:italic; margin:1.25rem 0; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="https://anyscale-sales.github.io/prospect-microsites/logo.png" alt="Anyscale" class="h-7 w-auto" />
+      <span class="font-semibold text-sm text-gray-900">teleworker.ai × Anyscale</span>
+    </div>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#opportunity" class="text-gray-500 hover:text-gray-900 transition-colors">Opportunity</a>
+      <a href="#deep-dives" class="text-gray-500 hover:text-gray-900 transition-colors">Deep Dives</a>
+      <a href="#architecture" class="text-gray-500 hover:text-gray-900 transition-colors">Architecture</a>
+      <a href="#code" class="text-gray-500 hover:text-gray-900 transition-colors">Code</a>
+      <a href="#next-steps" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-full transition-colors font-medium">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative pt-32 pb-28 bg-gray-950 text-white overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(59,130,246,0.25),transparent)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_60%,rgba(99,102,241,0.15),transparent)]"></div>
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-1.5 text-sm mb-8 backdrop-blur-sm">
+      <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+      Personalized for teleworker.ai
+    </div>
+    <h1 class="text-5xl md:text-7xl font-bold leading-none tracking-tight mb-6 max-w-4xl">teleworker.ai × Anyscale: Enhanced BIM Pipelines</h1>
+    <p class="text-xl md:text-2xl text-blue-100/80 mb-10 max-w-2xl leading-relaxed">Together, we streamline document-to-model processes, speeding up 3D BIM model generation and improving human-in-the-loop reviews for construction and facilities projects.</p>
+    <div class="flex flex-wrap gap-4">
+      <a href="#opportunity" class="inline-flex items-center px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-semibold transition-colors">
+        Explore the opportunity →
+      </a>
+      <a href="#next-steps" class="inline-flex items-center px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg font-semibold transition-colors backdrop-blur-sm">
+        Book a demo
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- POV / Opportunity -->
+<section id="opportunity" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+      <div class="lg:col-span-2">
+        <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">The Opportunity</p>
+        <div class="prose text-gray-700 leading-relaxed" id="pov-content"></div>
+      </div>
+      <div class="space-y-8 lg:pt-8">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Primary Use Case</p>
+          <p class="font-medium text-gray-800">Accelerate document-to-model pipelines for construction and facilities: parallel processing of large drawing sets (often 100+ page PDFs) to extract structured relationships (architectural, structural, and MEP) and generate 3D parametric BIM models, with a path toward near-real-time, human-in-the-loop review in a UI.</p>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Challenges We Solve</p>
+          <ul class="space-y-2"><li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Slow turnaround on large plan sets
+    </li>
+<li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Not interactive enough for human-in-the-loop review
+    </li>
+<li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Hard to scale when multiple projects hit at once
+    </li>
+<li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>MEP extraction is complex and compute-heavy
+    </li>
+<li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Every customer’s drawings differ and break assumptions
+    </li>
+<li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Need consistent pipelines despite custom requests
+    </li>
+<li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Speed gains must pencil out economically
+    </li></ul>
+        </div>
+        <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
+          <p class="text-sm font-semibold text-blue-800 mb-1">Built on Ray</p>
+          <p class="text-xs text-blue-600 leading-relaxed">The unified open-source framework for distributed AI — data processing, training, and serving at any scale.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Posts -->
+<section id="deep-dives" class="py-24 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Deep Dives</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Technical Guides for Your Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(0)">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 1 · 5 min read</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">teleworker.ai × Anyscale: A Technical Blueprint for Accelerating Document-to-Model Pipelines in Construction</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how teleworker.ai and Anyscale could revolutionize document-to-model pipelines by leveraging Ray for parallel processing and near-real-time human-in-the-loop review.</p>
+      <span class="text-sm font-medium text-blue-600" id="blog-toggle-0">Read article ↓</span>
+      <div id="blog-body-0" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
+    </div>
+  
+
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(1)">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 2 · 5 min read</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">teleworker.ai Could Solve Slow Turnaround on Large Plan Sets at Scale with Anyscale</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">Explore how teleworker.ai and Anyscale could revolutionize document-to-model pipelines for construction and facilities by leveraging Ray for scalable, parallel processing and near-real-time, human-in-the-loop reviews.</p>
+      <span class="text-sm font-medium text-blue-600" id="blog-toggle-1">Read article ↓</span>
+      <div id="blog-body-1" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
+    </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- Architecture -->
+<section id="architecture" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Recommended Architecture</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Your Reference Architecture</h2>
+    <p class="text-gray-500 max-w-2xl mb-12 leading-relaxed">Teleworker.ai and Anyscale are collaborating to develop a scalable architecture that accelerates document-to-model pipelines for construction and facilities by leveraging Ray's parallel processing capabilities. The architecture efficiently ingests large drawing sets, extracts structured relationships, and generates 3D parametric BIM models, enabling near-real-time human-in-the-loop review via an interactive UI.</p>
+    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 overflow-x-auto">
+      <div id="mermaid-diagram" class="flex justify-center min-h-[120px] items-center"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Code Examples -->
+<section id="code" class="py-24 bg-gray-950">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">Getting Started</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Curated Code Examples</h2>
+    <p class="text-gray-400 mb-12 max-w-2xl leading-relaxed">
+      Production-ready templates from the Anyscale library, selected for your use case.
+      Clone and run in minutes on Anyscale.
+    </p>
+    <div class="space-y-6">
+      
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">LLM Batch Inference with Ray Data</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template, collaboratively deployed by teleworker.ai and Anyscale, optimizes the complex task of processing large sets of construction drawings into structured data for 3D BIM model generation. By leveraging Ray's distributed computing capabilities, teleworker.ai can efficiently manage and process over 100-page PDFs, ensuring quick and reliable extraction of architectural, structural, and MEP relationships. This solution reduces the manual overhead and potential for errors, paving the way for near-real-time, human-in-the-loop review in their UI.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/ray-data-llm" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker.ai's current approach to scaling PDF processing
+import multiprocessing
+import boto3
+import os
+import subprocess
+
+files_to_process = ['file1.pdf', 'file2.pdf', ...]
+results = []
+
+def process_file(file):
+    try:
+        # Simulate processing
+        result = subprocess.run(['process_script.sh', file], check=True)
+        return result
+    except Exception as e:
+        print(f'Error processing {file}: {e}')
+        return None
+
+with multiprocessing.Pool(processes=4) as pool:
+    for file in files_to_process:
+        try:
+            result = pool.apply_async(process_file, (file,))
+            results.append(result)
+        except Exception as e:
+            print(f'Failed to queue {file}: {e}')
+
+for result in results:
+    try:
+        output = result.get()
+        if output is not None:
+            # Manual checkpoint
+            with open('checkpoint.txt', 'a') as f:
+                f.write(f'{output}\n')
+    except Exception as e:
+        print(f'Error retrieving result: {e}')</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker.ai's streamlined processing with Ray on Anyscale
+import ray
+from ray import serve
+
+ray.init()  # Connect to Anyscale cluster
+
+@ray.remote
+def process_file(file):
+    # Simulate processing
+    return f'Processed {file}'
+
+files_to_process = ['file1.pdf', 'file2.pdf', ...]
+
+# Launch processing tasks
+results = ray.get([process_file.remote(file) for file in files_to_process])
+
+# Results are automatically retrieved
+for result in results:
+    print(result)  # No manual checkpointing needed
+
+# Teleworker.ai now leverages Anyscale's scalability with minimal code</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Ray Jobs for Production Batch Workloads</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template, co-developed by teleworker.ai and Anyscale, revolutionizes the document-to-model pipeline by leveraging Ray Jobs for efficient, parallel processing of extensive drawing sets. By extracting structured relationships from architectural, structural, and MEP elements, it facilitates the generation of 3D parametric BIM models, paving the way for near-real-time, human-in-the-loop review within a user interface. teleworker.ai's engineering team will utilize this on Anyscale to significantly streamline and scale their operations.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/intro-jobs" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># teleworker.ai's current infrastructure for scaling document processing
+import multiprocessing
+import boto3
+import os
+import subprocess
+import time
+
+s3_client = boto3.client('s3')
+
+# Manual job queue management
+queue = ['file1.pdf', 'file2.pdf', 'file3.pdf']
+
+# Function to process a single PDF
+def process_pdf(file_name):
+    try:
+        # Manual checkpointing
+        if not os.path.exists(f'/tmp/{file_name}.processed'):
+            # Simulate PDF processing
+            subprocess.run(['pdftotext', file_name])
+            with open(f'/tmp/{file_name}.processed', 'w') as f:
+                f.write('done')
+        # Upload result to S3
+        s3_client.upload_file(f'/tmp/{file_name}.processed', 'mybucket', file_name)
+    except Exception as e:
+        print(f'Error processing {file_name}: {e}')
+        # Manual retry logic
+        time.sleep(5)
+        process_pdf(file_name)
+
+# Multiprocessing with manual error handling
+pool = multiprocessing.Pool(processes=3)
+results = [pool.apply_async(process_pdf, (file_name,)) for file_name in queue]
+
+for result in results:
+    try:
+        result.get()
+    except Exception as e:
+        print(f'Error in worker: {e}')</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># teleworker.ai's streamlined pipeline with Ray on Anyscale
+import ray
+
+ray.init()  # Auto-scales on Anyscale
+
+@ray.remote
+def process_pdf(file_name):
+    # Auto-checkpoints, no manual S3 writes
+    # Simulate PDF processing
+    subprocess.run(['pdftotext', file_name])
+    return f'{file_name} processed'
+
+# Parallel processing with Ray, no manual job queue
+files = ['file1.pdf', 'file2.pdf', 'file3.pdf']
+
+# Launching tasks
+results = [process_pdf.remote(file_name) for file_name in files]
+
+# Collect results
+processed_files = ray.get(results)
+
+print(processed_files)  # Observability without print statements</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">End-to-End LLM Workflow</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template is designed specifically for teleworker.ai to enhance their document-to-model pipelines in construction and facilities management. By leveraging Anyscale, teleworker.ai can efficiently process large sets of construction drawings to extract structured relationships and generate 3D parametric BIM models. This approach facilitates near-real-time, human-in-the-loop review, streamlining operations and improving productivity.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/e2e-llm-workflows" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># teleworker.ai's current approach to scaling document processing
+import multiprocessing
+import boto3
+import os
+import subprocess
+
+# Manual setup of worker nodes
+try:
+    subprocess.run(['aws', 'ec2', 'run-instances', '--count', '2'], check=True)
+except subprocess.CalledProcessError as e:
+    print(f'Error launching instances: {e}')
+
+# Manual job queue and state tracking
+jobs = multiprocessing.Queue()
+results = []
+
+# Checkpoint to disk
+def process_document(doc_id):
+    try:
+        # Simulate processing
+        result = f'Processed {doc_id}'
+        with open(f'/tmp/{doc_id}.txt', 'w') as f:
+            f.write(result)
+        return result
+    except Exception as e:
+        print(f'Error processing document {doc_id}: {e}')
+        return None
+
+# Manual worker pool
+with multiprocessing.Pool(2) as pool:
+    for doc_id in range(100):
+        jobs.put(doc_id)
+    while not jobs.empty():
+        doc_id = jobs.get()
+        result = pool.apply_async(process_document, (doc_id,))
+        results.append(result.get())
+
+# Print results for observability
+print(results)</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># teleworker.ai's streamlined approach with Anyscale and Ray
+import ray
+from ray import serve
+
+# Define a Ray remote function
+@ray.remote
+def process_document(doc_id):
+    # Simulate processing
+    return f'Processed {doc_id}'
+
+# Initialize Ray
+ray.init()
+
+# Parallel execution with Ray
+# Automatically scales with available resources
+document_ids = range(100)
+results = ray.get([process_document.remote(doc_id) for doc_id in document_ids])
+
+# Serve for near-real-time review
+serve.start()
+
+# Print results for observability
+print(results)  # auto-handled observability</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Multi-Node LLM Deployment</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template, specifically tailored for teleworker.ai, streamlines the complex task of processing large construction and facilities drawing sets into structured data and 3D BIM models. By leveraging Anyscale, teleworker.ai can efficiently scale their document-to-model pipelines, enabling near-real-time processing and human-in-the-loop review, significantly reducing the manual overhead and potential for errors.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/ray_serve_llm" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># teleworker.ai's current approach to scaling document processing
+import multiprocessing
+import boto3
+import subprocess
+import os
+
+def process_document(document):
+    try:
+        # Manual error handling
+        result = subprocess.run(['python', 'process_pdf.py', document], check=True)
+        # Checkpoint to disk
+        with open(f'/tmp/results/{document}.json', 'w') as f:
+            f.write(result)
+    except Exception as e:
+        print(f'Error processing {document}: {e}')
+
+# Manual job queue management
+documents = ['doc1.pdf', 'doc2.pdf', 'doc3.pdf']
+
+# Spin up workers manually
+with multiprocessing.Pool(processes=3) as pool:
+    pool.map(process_document, documents)
+
+# Manual retry loop
+for document in documents:
+    if not os.path.exists(f'/tmp/results/{document}.json'):
+        print(f'Retrying {document}')
+        process_document(document)</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># teleworker.ai's optimized approach with Anyscale and Ray
+import ray
+
+# Define a remote function for processing documents
+@ray.remote
+def process_document(document):
+    # auto-checkpoints, no manual S3 writes
+    return vllm.LLM(document, config=LLMConfig(tensor_parallelism=8))
+
+# Initialize Ray
+ray.init()
+
+# Distribute tasks across multiple workers
+results = ray.get([process_document.remote(doc) for doc in ['doc1.pdf', 'doc2.pdf', 'doc3.pdf']])
+
+# 8 GPUs, zero config changes
+# Results are automatically managed and checkpointed by Ray</code></pre>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- Next Steps -->
+<section id="next-steps" class="py-24 bg-blue-600 text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-200 mb-4">Next Steps</p>
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+      Ready to accelerate teleworker.ai's AI journey?
+    </h2>
+    <p class="text-xl text-blue-100 mb-14 max-w-2xl mx-auto leading-relaxed">
+      Join leading AI teams who scaled from prototype to production with Anyscale.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+      <a href="https://www.anyscale.com/contact" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Talk to an Engineer</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">Get a technical walkthrough of your specific use case</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Schedule a call →</span>
+      </a>
+      <a href="https://console.anyscale.com/" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Start Free Trial</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">Run your first workload on Anyscale today — no setup required</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Get started →</span>
+      </a>
+      <a href="https://www.anyscale.com/demo" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Book a Demo</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">See how teams like yours build and scale with Ray on Anyscale</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Book now →</span>
+      </a>
+    </div>
+    <p class="text-blue-200 text-sm">
+      Questions? Email <a href="mailto:sales@anyscale.com" class="underline hover:text-white">sales@anyscale.com</a>
+    </p>
+  </div>
+</section>
+
+<script>
+  // Blog post content
+  window.__blog0 = "## The teleworker.ai × Anyscale Vision\n\nAs teleworker.ai explores innovative ways to accelerate document-to-model pipelines for the construction and facilities industries, the prospect of collaborating with Anyscale offers compelling possibilities. The primary challenge lies in efficiently processing large drawing sets—often comprising over 100 pages of PDFs—to extract and organize architectural, structural, and MEP relationships, ultimately generating 3D parametric BIM models. Anyscale, with its powerful Ray framework, could provide the scalable infrastructure needed to address these challenges, paving the way toward near-real-time, human-in-the-loop review.\n\n## How teleworker.ai and Anyscale Would Handle Data at Scale\n\nIn the construction industry, time is of the essence. The slow turnaround of processing large plan sets and the complexity of MEP extraction pose significant hurdles for teleworker.ai. By employing Anyscale's distributed computing capabilities, teleworker.ai could leverage Ray to parallelize the extraction process across numerous compute nodes. This approach would dramatically reduce processing times and allow the system to scale efficiently with the fluctuating demand of multiple concurrent projects.\n\nFor example, teleworker.ai could deploy a Ray cluster to distribute the task of parsing PDFs and extracting structured data. Each node in the cluster could handle a subset of pages or specific types of relationships, such as structural or MEP elements, ensuring that the workload is balanced and processed rapidly.\n\n```python\nimport ray\n\nray.init()  # Initializes a Ray cluster\n\n@ray.remote\ndef process_page(page):\n    # Placeholder for the actual page processing logic\n    extracted_data = extract_data_from_page(page)\n    return extracted_data\n\n# Assume `pdf_pages` is a list of pages from the PDF\npdf_pages = get_pdf_pages(\"large_drawing_set.pdf\")\n\n# Distribute the processing of pages across Ray workers\nfutures = [process_page.remote(page) for page in pdf_pages]\nresults = ray.get(futures)\n\n# Combine results into a structured format\nstructured_data = combine_results(results)\n```\n\nIn this example, Ray would distribute the workload of processing each page of a large PDF across multiple workers, allowing teleworker.ai to handle large datasets with improved efficiency and speed.\n\n## Enhancing Human-in-the-loop Review with teleworker.ai and Anyscale\n\nBeyond scalability, teleworker.ai envisions a system that supports near-real-time, human-in-the-loop review. By integrating Ray with a responsive UI, teleworker.ai could create an interactive platform where human operators can review and validate the extracted data as it is processed. This would not only enhance the accuracy of the final BIM models but also ensure that custom requests from clients are consistently and precisely addressed.\n\nAnyscale's ability to integrate seamlessly with cloud-based GPU solutions, such as those provided by Nebius, would further enable teleworker.ai to optimize compute-heavy tasks like MEP extraction, ensuring speed gains that are economically viable.\n\n## Proposed Next Steps for teleworker.ai and Anyscale Collaboration\n\n1. **Prototype Development:** Teleworker.ai and Anyscale would collaborate to develop a prototype using Ray to process a small set of representative construction documents. This would validate the feasibility of the proposed architecture and help identify any initial challenges.\n\n2. **Scalability Testing:** Upon successful prototyping, the next step would involve conducting scalability tests with larger datasets to fine-tune performance parameters and ensure consistent pipeline performance across diverse client requirements.\n\n3. **UI Integration for Human-in-the-loop Review:** Finally, the partnership would focus on integrating the distributed extraction system with a UI that facilitates near-real-time human validation and review, ensuring the system not only scales technically but also meets the practical needs of teleworker.ai's clients.\n";
+    window.__blog1 = "## The teleworker.ai × Anyscale Vision\n\nIn a rapidly evolving construction and facilities management sector, teleworker.ai is exploring innovative solutions to enhance its document-to-model pipelines. By potentially partnering with Anyscale, teleworker.ai envisions a future where the slow turnaround on large plan sets could be significantly accelerated through Ray's scalable parallel processing capabilities.\n\nThe construction industry frequently deals with large drawing sets, often encompassing over 100-page PDFs, which need to be processed into structured relationships for architectural, structural, and mechanical, electrical, and plumbing (MEP) components. The current setup, utilizing Python and PyTorch in a Dockerized environment on rented GPU servers, has been effective but faces challenges with scalability and interactivity for human-in-the-loop reviews. Anyscale, with its robust support for the Ray framework, could provide the necessary infrastructure to address these pain points and meet the increasing demands for near-real-time processing.\n\n## How teleworker.ai and Anyscale Would Handle Data at Scale\n\nScalability remains a critical hurdle for teleworker.ai, especially when multiple projects hit simultaneously. Every customer's drawings differ, often breaking assumptions and necessitating custom requests. A partnership with Anyscale could enable teleworker.ai to implement a more efficient, scalable solution using Ray.\n\nRay's parallel processing capabilities would allow the teleworker.ai team to distribute tasks across multiple nodes, improving speed without compromising on economic feasibility. Large drawing sets could be processed concurrently, extracting structured relationships efficiently.\n\nHere's a prospective Python + Ray code example illustrating how teleworker.ai could leverage this capability:\n\n```python\nimport ray\n\nray.init()\n\n@ray.remote\ndef process_drawing_page(page_data):\n    # Simulate complex page processing, e.g., extracting MEP components\n    processed_data = complex_mep_extraction(page_data)\n    return processed_data\n\n# Assume `drawing_pages` is a list of page data from a large PDF\nresults = ray.get([process_drawing_page.remote(page) for page in drawing_pages])\n\n# Combine results for further modeling into a 3D parametric BIM model\nfinal_model = combine_into_bim_model(results)\n```\n\n*This code would allow teleworker.ai to distribute the workload of processing each page of a large drawing set across multiple nodes, thereby significantly reducing the time required for MEP extraction and model generation.*\n\n## Envisioning Enhanced Human-in-the-Loop Reviews with teleworker.ai and Anyscale\n\nOne of the major pain points for teleworker.ai is the lack of interactivity in the review process. The envisioned partnership with Anyscale could facilitate a more interactive environment, where near-real-time feedback is possible. By leveraging Anyscale's infrastructure, teleworker.ai could create a UI-driven framework that enables stakeholders to review, comment, and modify models as they are being processed.\n\nThis approach would enhance the accuracy and quality of the generated models, as human experts could intervene and guide the AI processing in real-time, ensuring that the output aligns with specific project requirements.\n\n## Proposed Path Forward for teleworker.ai and Anyscale\n\nA potential partnership between teleworker.ai and Anyscale would entail several strategic steps to realize this vision:\n\n1. **Prototype Development:** Initiate a pilot project focusing on a subset of teleworker.ai's pipeline to evaluate Ray's parallel processing capabilities on Anyscale's infrastructure.\n\n2. **UI Integration:** Collaborate on developing a UI framework that supports human-in-the-loop processes, enhancing interactivity and real-time feedback during model generation.\n\n3. **Scalability Testing:** Conduct extensive scalability tests to ensure that the proposed solution can handle multiple large-scale projects simultaneously, meeting the economic and efficiency goals of teleworker.ai.\n\nThrough these steps, teleworker.ai and Anyscale could jointly unlock new efficiencies and capabilities in document-to-model pipelines, setting a new standard in the construction and facilities management industry.";
+
+  // Render POV markdown
+  document.getElementById('pov-content').innerHTML = marked.parse("In an era where artificial intelligence is redefining the boundaries of what's possible, teleworker.ai stands at the forefront of transforming the construction and facilities industry. By converting 2D building documents and on-site reality capture into 3D digital twins, teleworker.ai is paving the way for more efficient and accurate building information modeling (BIM). As the industry demands faster and more scalable solutions, teleworker.ai is poised to innovate, yet faces challenges that can be addressed with strategic partnerships and cutting-edge technology.\n\n## The teleworker.ai Scale Challenge\n\nAs teleworker.ai continues to push the boundaries of BIM conversion, they face significant infrastructure challenges. The primary pain points include slow turnaround times on processing large plan sets, which often consist of over 100-page PDFs. This slowdown is exacerbated by the need for interactive human-in-the-loop review, which current systems struggle to support at scale. Scaling becomes even more difficult when multiple projects overlap, stretching resources thin and making it difficult to maintain consistent pipelines amid custom requests.\n\nAdditionally, the extraction of mechanical, electrical, and plumbing (MEP) data from these documents is both complex and compute-heavy, compounded by the variability in customers' drawings which often break pre-existing assumptions. teleworker.ai must ensure that any speed gains are economically viable, further complicating their infrastructure needs. Currently utilizing a Python and PyTorch computer vision pipeline containerized with Docker, and relying on rented GPU servers, they are moving workloads to cloud GPUs through Nebius, yet the need for a robust, scalable solution remains.\n\n## What teleworker.ai and Anyscale Could Build Together\n\nA partnership between teleworker.ai and Anyscale could revolutionize the way teleworker.ai handles its document-to-model pipelines. By leveraging Anyscale's expertise in distributed computing, teleworker.ai could harness the power of Ray, an open-source framework that simplifies building distributed applications. Specifically, Ray Data could accelerate the processing of large drawing sets, allowing for parallel extraction of structured relationships in architectural, structural, and MEP domains. This would directly address the issue of slow turnaround times.\n\nFurthermore, teleworker.ai could employ Ray Train to optimize the training of computer vision models used in processing plan sheets, ensuring that these models can adapt quickly to the variability in customer drawings. Ray Serve could facilitate the deployment of these models in a scalable manner, ensuring near-real-time inferencing capabilities that bring teleworker.ai closer to their goal of a human-in-the-loop UI for review. By combining efforts, teleworker.ai and Anyscale could create a robust infrastructure that scales seamlessly, even under the pressure of simultaneous projects.\n\n## The teleworker.ai × Anyscale Architecture\n\nShould teleworker.ai choose to move forward with Anyscale, their engineering team would operate on a cloud-native architecture optimized for scalability and performance. This architecture would be built on Anyscale's platform, utilizing Ray to manage distributed workloads efficiently. Teleworker.ai's existing computer vision pipelines, currently containerized with Docker, would be seamlessly integrated into this architecture, leveraging Anyscale's dynamic scaling capabilities.\n\nThe proposed architecture would involve cloud-based GPU clusters that automatically scale in response to workload demands, ensuring optimal resource utilization and cost-efficiency. Ray Serve would enable the deployment of inference models as microservices, providing a flexible and responsive backend for teleworker.ai's UI. This setup would also support a hybrid cloud model, allowing teleworker.ai to maintain certain workloads on-premises or on Nebius cloud GPUs, while dynamically offloading overflow tasks to Anyscale's infrastructure.\n\n## teleworker.ai on Anyscale: What Becomes Possible\n\nBy partnering with Anyscale, teleworker.ai could achieve unprecedented outcomes in their primary use case of accelerating document-to-model pipelines. The enhanced infrastructure would enable near-real-time processing and review of large plan sets, allowing teleworker.ai to scale operations seamlessly across multiple projects. The integration of Ray would ensure that teleworker.ai can handle the complexity of MEP extraction with greater efficiency, while maintaining economic viability.\n\nWith these advancements, teleworker.ai could position itself as a leader in the construction and facilities industry, offering a solution that not only meets but exceeds the growing demands of their clients. The potential partnership with Anyscale could unlock new levels of performance and scalability, propelling teleworker.ai into the future of AI-driven building information modeling.");
+
+  // Blog toggle
+  function toggleBlog(i) {
+    const body = document.getElementById('blog-body-' + i);
+    const toggle = document.getElementById('blog-toggle-' + i);
+    const blogData = [window.__blog0, window.__blog1];
+    if (body.classList.contains('hidden')) {
+      if (!body.dataset.rendered) {
+        body.innerHTML = marked.parse(blogData[i] || '');
+        body.dataset.rendered = '1';
+        // Re-run hljs on any code blocks inside
+        body.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
+      }
+      body.classList.remove('hidden');
+      toggle.textContent = 'Collapse ↑';
+    } else {
+      body.classList.add('hidden');
+      toggle.textContent = 'Read article ↓';
+    }
+  }
+
+  // Syntax highlight code examples
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code').forEach(el => {
+      try { hljs.highlightElement(el); } catch(e) {}
+    });
+  });
+
+  // Mermaid — use JS API to avoid HTML-entity encoding issues
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: 'base',
+    flowchart: {
+      nodeSpacing: 30,
+      rankSpacing: 40,
+      padding: 6,
+      useMaxWidth: true,
+    },
+    themeVariables: {
+      primaryColor: '#EFF6FF',
+      primaryTextColor: '#1E40AF',
+      primaryBorderColor: '#93C5FD',
+      lineColor: '#60A5FA',
+      secondaryColor: '#F0FDF4',
+      tertiaryColor: '#FEF3C7',
+      fontSize: '11px',
+      nodePadding: '4',
+    },
+  });
+  (async () => {
+    const el = document.getElementById('mermaid-diagram');
+    if (!el) return;
+    try {
+      const diagram = "flowchart TD\n  subgraph DataIngestion\n    dataSources[Data Sources]\n    ingestionLayer[Ingestion Layer]\n    dataSources --> ingestionLayer\n  end\n  subgraph RayProcessing\n    rayData[Ray Data]\n    rayTrain[Ray Train]\n    rayServe[Ray Serve]\n    ingestionLayer --> rayData\n    rayData --> rayTrain\n    rayTrain --> rayServe\n  end\n  subgraph ModelManagement\n    modelRegistry[Model Registry]\n    rayTrain --> modelRegistry\n  end\n  subgraph ServingAndInference\n    inferenceEndpoint[Inference Endpoint]\n    rayServe --> inferenceEndpoint\n  end\n  subgraph DownstreamApps\n    humanReviewUI[Human Review UI]\n    inferenceEndpoint --> humanReviewUI\n  end";
+      const { svg } = await mermaid.render('arch', diagram);
+      el.innerHTML = svg;
+      const svgEl = el.querySelector('svg');
+      svgEl.removeAttribute('height');
+      svgEl.setAttribute('width', '100%');
+      svgEl.style.maxWidth = '100%';
+      svgEl.style.height = 'auto';
+    } catch (e) {
+      el.innerHTML = '<p style="color:#ef4444;font-size:0.875rem">Diagram rendering failed: ' + e.message + '</p>';
+    }
+  })();
+</script>
+</body>
+</html>
