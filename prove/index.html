@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prove × Anyscale</title>
+  <link rel="icon" type="image/png" href="https://anyscale-sales.github.io/prospect-microsites/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .prose h1,.prose h2 { font-size:1.5rem; font-weight:700; margin:2rem 0 1rem; color:#111827; }
+    .prose h3 { font-size:1.125rem; font-weight:600; margin:1.5rem 0 0.5rem; color:#1f2937; }
+    .prose p { margin:1rem 0; }
+    .prose ul { list-style:disc; padding-left:1.5rem; margin:1rem 0; }
+    .prose li { margin:0.4rem 0; }
+    .prose strong { font-weight:600; }
+    .prose code { background:#f1f5f9; padding:0.1rem 0.35rem; border-radius:0.25rem; font-size:0.85em; font-family:monospace; }
+    .prose pre { background:#0f172a; padding:1.25rem; border-radius:0.75rem; overflow-x:auto; margin:1.25rem 0; }
+    .prose pre code { background:none; padding:0; color:#e2e8f0; font-size:0.85em; }
+    .prose blockquote { border-left:3px solid #3b82f6; padding-left:1rem; color:#6b7280; font-style:italic; margin:1.25rem 0; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="https://anyscale-sales.github.io/prospect-microsites/logo.png" alt="Anyscale" class="h-7 w-auto" />
+      <span class="font-semibold text-sm text-gray-900">Prove × Anyscale</span>
+    </div>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#opportunity" class="text-gray-500 hover:text-gray-900 transition-colors">Opportunity</a>
+      <a href="#deep-dives" class="text-gray-500 hover:text-gray-900 transition-colors">Deep Dives</a>
+      <a href="#architecture" class="text-gray-500 hover:text-gray-900 transition-colors">Architecture</a>
+      <a href="#code" class="text-gray-500 hover:text-gray-900 transition-colors">Code</a>
+      <a href="#next-steps" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-full transition-colors font-medium">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative pt-32 pb-28 bg-gray-950 text-white overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(59,130,246,0.25),transparent)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_60%,rgba(99,102,241,0.15),transparent)]"></div>
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-1.5 text-sm mb-8 backdrop-blur-sm">
+      <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+      Personalized for Prove
+    </div>
+    <h1 class="text-5xl md:text-7xl font-bold leading-none tracking-tight mb-6 max-w-4xl">Prove × Anyscale: Advancing Identity Security Solutions</h1>
+    <p class="text-xl md:text-2xl text-blue-100/80 mb-10 max-w-2xl leading-relaxed">Collaboratively enhancing real-time fraud detection and secure AI commerce with cutting-edge machine learning and phone-based authentication technologies for global industries.</p>
+    <div class="flex flex-wrap gap-4">
+      <a href="#opportunity" class="inline-flex items-center px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-semibold transition-colors">
+        Explore the opportunity →
+      </a>
+      <a href="#next-steps" class="inline-flex items-center px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg font-semibold transition-colors backdrop-blur-sm">
+        Book a demo
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- POV / Opportunity -->
+<section id="opportunity" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+      <div class="lg:col-span-2">
+        <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">The Opportunity</p>
+        <div class="prose text-gray-700 leading-relaxed" id="pov-content"></div>
+      </div>
+      <div class="space-y-8 lg:pt-8">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Primary Use Case</p>
+          <p class="font-medium text-gray-800">Industry &amp; Use Cases: Prove’s solutions are used across banking, fintech lending, cryptocurrency, payments, healthcare, insurance, e-commerce marketplaces, online gaming, and more. Typical use cases include digital account opening (boosting auto-approvals while screening fraud), customer login authentication (invisibly verifying returning users via phone possession and behavior), and transaction risk checks (e.g. scoring a payment or withdrawal for SIM swap risk in milliseconds). The platform also helps businesses meet regulatory requirements like KYC/AML – e.g. Prove’s identity verification can incorporate sanctions/PEP screening as part of the workflow. Overall, Prove positions itself as “the modern way of proving identity”, emphasizing high accuracy (reducing false declines and fraud) with low friction, enabled by its proprietary blend of machine learning and cryptographic phone-based authentication.  AI/ML Initiatives &amp; Use Cases (facts, recent-first)  Dec 2025 – ProveX Trust Exchange Launch: Prove introduced ProveX℠, the first “digital trust exchange,” which uses AI/ML-vetted identity tokens to let companies instantly share verified data with partners. For example, a bank using ProveX can confirm a user’s identity once and then fetch that user’s verified credit file or payment credentials from a partner without new checks. ProveX is built on the tokenized identity graph and ensures each data request is tied to a real, authenticated user (not a bot or imposter) via Prove’s ML-driven identity trust checks and cryptographic keys. This initiative extends Prove’s ML-based trust decisions beyond a single enterprise to an entire network, enabling “trust to travel” across organizations for smoother customer experiences. (Launch partners include Checkr (background data), Nova Credit (credit bureau), and others, whose services are now accessible through ProveX).  Oct 2025 – Verified Agent for AI Commerce: In late 2025, Prove launched Prove Verified Agent, a solution to secure the emerging “agentic commerce” economy where AI agents act on behalf of users online. This initiative addresses the trust gap when autonomous AI bots make transactions. Prove’s Verified Agent creates a cryptographically verifiable chain-of-trust linking a human’s verified identity to their AI agent’s actions. It binds identity, intent, payment credentials, and user consent into an auditable unit for every AI-driven transaction. Essentially, an AI assistant gets its own Prove-verified identity token tied back to a real user, so counterparties can confirm “is this agent authorized and tied to a real person?” in real time. This system uses Prove’s Identity Graph as the backbone and replaces weak checks (like simple API keys) with strong multi-factor verification and cryptographic proof at each step. Use case: Imagine an AI shopping bot that orders on your behalf – Verified Agent ensures that bot presents a verifiable credential proving it’s acting for you, preventing fraudsters or rogue AIs from impersonating real customers. This is a forward-looking ML/security initiative to enable safe AI-to-business interactions.  Oct 2025 – Global Identity Graph Platform: Prove rolled out its Global Identity Graph in October 2025, a foundational ML-powered identity platform covering over 10 billion devices and 90% of digital consumers worldwide. This graph continuously learns and updates reputational “trust signals” for each identity. For example, it tracks how long a phone number or device has been associated with a person and their history of trustworthy behavior vs. fraud signals. Unlike traditional identity data matching, Prove’s graph relies on deterministic ML models and real-time telecom data rather than static databases. A core use case is instant cross-border identity verification – e.g. a bank can instantly recognize a returning customer even if they changed phone carriers or moved countries, because the graph’s ML system has linked their various identifiers under one Prove ID token and noted continuous device tenure and behavior. The Global Identity Graph also acts like a “fraud antivirus” – providing real-time alerts if an identity’s pattern deviates (suggesting account takeover, SIM swap, or synthetic identity creation). This ML-driven platform was announced at Prove’s Improve 2025 conference and is now integrated into all Prove solutions globally.  Aug 2025 – Unified Authentication (Passive MFA): Prove launched a new Unified Authentication solution that uses ML to passively recognize users via their phone and behavior, aiming to replace one-time passwords. This high-stakes production use case uses continuous risk scoring in the background: for each login or transaction, Prove’s model evaluates device ownership, SIM changes, location, etc., to silently authenticate legitimate users and flag suspicious activity. The company reported this approach reduced reliance on SMS OTPs and mitigated SIM swap fraud for clients. Essentially, the ML model identifies if a user’s phone session is low-risk (same trusted device, no anomalous changes) so they aren’t challenged, whereas if risk signals are high (e.g. recent SIM card change or impossible travel), it can prompt additional verification or block the action. This was promoted with ROI claims of cutting costs and abandonment rates, highlighting ML’s role in improving both security and user experience in customer authentication.  June 2025 – Deepfake-Resistant Identity Verification: In mid-2025, Prove addressed the growing threat of AI-generated identity fraud (deepfakes, synthetic video) by partnering with authID on a “deepfake-resistant” verification capability. Through this partnership, Prove can augment its phone-centric verification with facial liveness detection and AI analysis to catch deepfake attempts. For example, during high-risk user onboarding, Prove’s workflow could invoke authID’s AI to verify that a selfie or video is of a real live person and not an AI-generated fake, before binding that face to a phone identity. This initiative shows Prove extending its ML toolkit by consuming a specialized computer-vision AI service to defend against novel fraud vectors (like generative AI spoofing). The partnership was announced as a way to “defend against AI‑generated fraud” globally. It underscores that AI/ML is in production use for fraud prevention – not just via Prove’s own models but also via integrated third-party AI where appropriate (in this case, to handle biometric verification, which is high-stakes for security).  May 2025 – ML Platform Milestone (400M Transactions): By May 2025, Prove announced its Pre-Fill identity service had processed 400 million transactions and 150 million unique users, reflecting massive growth of its ML-driven platform. In the same announcement, Prove hinted at a “revolutionary advancement in frictionless identity authentication,” reinforcing that continuous innovation in ML was a “market mandate” to keep ahead of fraud. (While details were light, this suggests that around this time Prove was doubling down on enhancing its ML models and platform – which likely paved the way for the Global Identity Graph and other advancements launched later in 2025.) The scale here – hundreds of millions of verifications – demonstrates that Prove’s AI/ML systems (like Trust Score and Pre-Fill algorithms) have been operating at very high volume in production.  Ongoing – Trust Score® Real-Time Risk Scoring: (Core ML use case, in production for several years)* Prove’s Trust Score® is an ML-powered risk score that evaluates the reputation of a phone number and device in real time. This is existential to Prove’s identity verification: every time a user signs up or logs in via a phone, Prove’s back-end computes a Trust Score (0–1000) based on myriad signals – e.g. SIM tenure, device change velocity, line type (mobile vs VoIP), number porting history, and recent SIM swap or account activity events. High scores indicate a “trusted” phone identity, whereas low scores flag risk of fraud. Concrete workload: A common deployment is before sending an OTP SMS – businesses call the Trust Score API to decide if the number is safe or if an OTP should be avoided. For instance, if the ML model returns a low score because it detects the phone is a virtual VoIP number or was SIM-swapped yesterday, the app can require additional ID checks instead of relying on a potentially compromised OTP. This use case represents streaming/real-time inference at scale: Prove reportedly measures 6 million+ “lifecycle events” daily and billions of authentications annually feeding into Trust Score computations. The Trust Score model is actively used in production by major banks, fintechs, and gaming platforms to prevent fraud like account takeovers and synthetic identities while letting legitimate users through with less friction. (Notably, Prove cites that using Trust Score as a pre-OTP check can significantly reduce OTP fraud; and scores above a certain threshold can auto-approve ~95% of users without extra steps.) This long-standing ML capability underpins many of Prove’s newer solutions and is continuously refined with new data.</p>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Challenges We Solve</p>
+          <ul class="space-y-2"><li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>DS prototypes in Python notebooks
+    </li>
+<li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Pipelines in Airflow/Kubeflow
+    </li>
+<li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Training in SageMaker jobs
+    </li>
+<li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Services on K8s microservices (FastAPI/gRPC)
+    </li>
+<li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Monitoring + drift loops
+    </li></ul>
+        </div>
+        <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
+          <p class="text-sm font-semibold text-blue-800 mb-1">Built on Ray</p>
+          <p class="text-xs text-blue-600 leading-relaxed">The unified open-source framework for distributed AI — data processing, training, and serving at any scale.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Posts -->
+<section id="deep-dives" class="py-24 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Deep Dives</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Technical Guides for Your Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(0)">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 1 · 5 min read</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Prove × Anyscale: A Technical Blueprint for Industry &amp; Use Cases</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how Prove and Anyscale could collaborate to revolutionize identity verification and fraud prevention using scalable distributed computing.</p>
+      <span class="text-sm font-medium text-blue-600" id="blog-toggle-0">Read article ↓</span>
+      <div id="blog-body-0" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
+    </div>
+  
+
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(1)">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 2 · 5 min read</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Prove Could Solve DS Prototypes in Python Notebooks at Scale with Anyscale</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how Prove and Anyscale could revolutionize digital identity verification, streamlining machine learning workflows and enhancing scalability through Ray.</p>
+      <span class="text-sm font-medium text-blue-600" id="blog-toggle-1">Read article ↓</span>
+      <div id="blog-body-1" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
+    </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- Architecture -->
+<section id="architecture" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Recommended Architecture</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Your Reference Architecture</h2>
+    <p class="text-gray-500 max-w-2xl mb-12 leading-relaxed">Prove and Anyscale are collaboratively building a scalable identity verification architecture that leverages Ray for distributed data processing and ML model training. This architecture integrates seamlessly with AWS infrastructure to provide real-time risk scoring and secure identity verification across various industries.</p>
+    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 overflow-x-auto">
+      <div id="mermaid-diagram" class="flex justify-center min-h-[120px] items-center"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Code Examples -->
+<section id="code" class="py-24 bg-gray-950">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">Getting Started</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Curated Code Examples</h2>
+    <p class="text-gray-400 mb-12 max-w-2xl leading-relaxed">
+      Production-ready templates from the Anyscale library, selected for your use case.
+      Clone and run in minutes on Anyscale.
+    </p>
+    <div class="space-y-6">
+      
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Ray Jobs for Production Batch Workloads</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Prove's solutions leverage machine learning to enhance identity verification across industries like banking, fintech, and e-commerce. By using Anyscale's Ray framework, Prove can streamline its batch processing workloads, enabling more efficient digital account opening, customer login authentication, and transaction risk checks. This integration reduces infrastructure complexity while maintaining high accuracy and low friction in their identity verification processes.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/intro-jobs" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># BEFORE: Manual infrastructure setup for batch processing at Prove
+import multiprocessing
+import boto3
+import subprocess
+import os
+import time
+
+# Setup S3 client
+s3_client = boto3.client('s3')
+
+# Function to process data
+def process_data(data):
+    try:
+        # Simulate processing
+        result = subprocess.run(['python', 'process_script.py', data], capture_output=True)
+        if result.returncode != 0:
+            raise Exception('Processing failed')
+        return result.stdout
+    except Exception as e:
+        print(f'Error processing {data}: {e}')
+        return None
+
+# Manual job queue and multiprocessing
+def main():
+    data_files = os.listdir('/data')
+    pool = multiprocessing.Pool(4)
+    results = []
+    for data in data_files:
+        result = pool.apply_async(process_data, args=(data,))
+        results.append(result)
+    pool.close()
+    pool.join()
+
+    # Save results to S3
+    for result in results:
+        output = result.get()
+        if output:
+            s3_client.put_object(Bucket='prove-bucket', Key=f'results/{output}.txt', Body=output)
+
+if __name__ == '__main__':
+    main()</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># AFTER: Simplified batch processing using Ray on Anyscale for Prove
+import ray
+
+# Initialize Ray
+ray.init()
+
+# Define a Ray remote function
+@ray.remote
+def process_data(data):
+    # Simulate processing
+    return f'Processed {data}'
+
+# Main function to distribute tasks
+def main():
+    data_files = ['/data/file1', '/data/file2', '/data/file3']
+    # Distribute tasks across workers
+    results = ray.get([process_data.remote(data) for data in data_files])
+    
+    # Auto-checkpoints, no manual S3 writes
+    for result in results:
+        print(f'Result: {result}')
+
+if __name__ == '__main__':
+    main()
+    ray.shutdown()</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Hyperparameter Optimization with Ray Tune</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">For Prove, deploying hyperparameter optimization with Ray Tune on Anyscale helps enhance their ML models that power identity verification across industries like banking and fintech. By streamlining the tuning process, Prove can improve the accuracy and efficiency of their fraud detection systems, ensuring high accuracy and low friction in identity verification. This integration supports Prove's mission of reducing false declines and enhancing security with minimal user disruption.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/intro-tune" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Prove's current hyperparameter tuning setup without Ray
+import multiprocessing
+import os
+import boto3
+import subprocess
+from my_ml_model import train_model
+
+# Manual setup of worker pool
+def worker_process(params):
+    try:
+        # Train model with given hyperparameters
+        result = train_model(params)
+        # Save results manually
+        with open(f'results_{params}.txt', 'w') as f:
+            f.write(str(result))
+    except Exception as e:
+        print(f'Error with params {params}: {e}')
+
+# Manual job queue management and retries
+params_list = [{'lr': 0.01, 'batch_size': 32}, {'lr': 0.001, 'batch_size': 64}]
+with multiprocessing.Pool(processes=4) as pool:
+    results = []
+    for params in params_list:
+        result = pool.apply_async(worker_process, (params,))
+        results.append(result)
+
+    for result in results:
+        try:
+            result.get(timeout=10)
+        except multiprocessing.TimeoutError:
+            print('Timeout occurred')
+
+# Manual infrastructure management
+subprocess.run(['aws', 'ec2', 'start-instances', '--instance-ids', 'i-1234567890abcdef0'])</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Prove's hyperparameter tuning with Ray Tune on Anyscale
+import ray
+from ray import tune
+from my_ml_model import train_model
+
+# Define search space
+search_space = {
+    'lr': tune.loguniform(1e-4, 1e-1),
+    'batch_size': tune.choice([32, 64, 128])
+}
+
+# Use ASHA scheduler for efficient exploration
+asha_scheduler = tune.schedulers.ASHA(max_t=100, grace_period=10, reduction_factor=2)
+
+# Run tuning job with Ray Tune
+ray.init()
+tune.run(
+    train_model,
+    config=search_space,
+    scheduler=asha_scheduler,
+    num_samples=10,
+    resources_per_trial={'cpu': 2, 'gpu': 1},  # auto-scaled resources
+    local_dir='./ray_results',  # auto-checkpoints, no manual S3 writes
+)
+
+# With Ray Tune, Prove can focus on model performance without manual infrastructure management</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Multi-Node LLM Deployment</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Prove's solutions leverage machine learning and cryptographic phone-based authentication to enhance digital identity verification across various industries like banking, fintech, and healthcare. By deploying their ML workloads on Anyscale, Prove can efficiently scale their identity verification processes, ensuring high accuracy and low friction, while meeting regulatory requirements such as KYC/AML. This integration allows Prove to maintain their position as a leader in identity verification by enabling seamless cross-organization trust through initiatives like the ProveX Trust Exchange.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/ray_serve_llm" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Prove's current infrastructure setup for ML workloads
+import multiprocessing
+import boto3
+import subprocess
+import time
+
+# Manual worker setup and job queue management
+def worker_task(task_id):
+    try:
+        # Simulate a task that could fail
+        result = complex_computation(task_id)
+        save_to_s3(result)
+    except Exception as e:
+        print(f&quot;Error processing task {task_id}: {e}&quot;)
+        retry_task(task_id)
+
+# Manually spinning up worker processes
+processes = []
+for i in range(10):
+    p = multiprocessing.Process(target=worker_task, args=(i,))
+    processes.append(p)
+    p.start()
+
+# Manual error handling and retry logic
+for p in processes:
+    p.join()
+    if p.exitcode != 0:
+        print(f&quot;Process {p.name} failed, retrying...&quot;)
+        retry_task(p.name)
+
+# Manual checkpointing and state tracking
+def save_to_s3(data):
+    s3 = boto3.client('s3')
+    s3.put_object(Bucket='mybucket', Key='result.txt', Body=data)
+
+# Retry mechanism
+retry_attempts = 3
+for attempt in range(retry_attempts):
+    try:
+        # Retry logic
+        subprocess.run(['my_script.sh'])
+    except subprocess.CalledProcessError as e:
+        print(f&quot;Attempt {attempt} failed: {e}&quot;)
+        time.sleep(5)
+</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Prove's ML deployment on Anyscale using Ray
+import ray
+from ray import serve
+from ray.train import ScalingConfig
+
+# Define the ML model deployment with Ray Serve
+@serve.deployment(num_replicas=4)
+def model_deployment(request):
+    # Process request with model
+    return model.predict(request)
+
+# Initialize Ray and deploy the model
+ray.init()
+model_deployment.deploy()
+
+# Efficiently scale inference with Ray
+@ray.remote
+def process_task(task_id):
+    # Task processing with auto-retries and checkpoints
+    return complex_computation(task_id)
+
+# Scale tasks across multiple workers
+futures = [process_task.remote(i) for i in range(10)]
+results = ray.get(futures)
+
+# Automatically manage state and retries without manual intervention
+# Deploying on Anyscale allows Prove to seamlessly scale identity verification processes</code></pre>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- Next Steps -->
+<section id="next-steps" class="py-24 bg-blue-600 text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-200 mb-4">Next Steps</p>
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+      Ready to accelerate Prove's AI journey?
+    </h2>
+    <p class="text-xl text-blue-100 mb-14 max-w-2xl mx-auto leading-relaxed">
+      Join leading AI teams who scaled from prototype to production with Anyscale.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+      <a href="https://www.anyscale.com/contact" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Talk to an Engineer</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">Get a technical walkthrough of your specific use case</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Schedule a call →</span>
+      </a>
+      <a href="https://console.anyscale.com/" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Start Free Trial</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">Run your first workload on Anyscale today — no setup required</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Get started →</span>
+      </a>
+      <a href="https://www.anyscale.com/demo" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Book a Demo</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">See how teams like yours build and scale with Ray on Anyscale</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Book now →</span>
+      </a>
+    </div>
+    <p class="text-blue-200 text-sm">
+      Questions? Email <a href="mailto:sales@anyscale.com" class="underline hover:text-white">sales@anyscale.com</a>
+    </p>
+  </div>
+</section>
+
+<script>
+  // Blog post content
+  window.__blog0 = "## The Prove × Anyscale Vision\n\nIn the ever-evolving landscape of digital identity verification, fraud prevention, and customer authentication, Prove has positioned itself as a leader by leveraging machine learning (ML) and cryptographic phone-based authentication. Operating across industries such as banking, fintech, healthcare, and e-commerce, Prove's solutions enhance digital account openings, customer login authentication, and transaction risk checks, all while adhering to regulatory requirements like KYC/AML.\n\nHowever, as the volume and complexity of data continue to grow, Prove faces challenges in scaling their ML pipelines and maintaining low-latency responses. This is where a strategic collaboration with Anyscale could provide significant benefits by enabling Prove to harness the power of distributed computing with Ray, scaling their ML and data processing tasks effectively and efficiently.\n\n## How Prove and Anyscale Would Handle Data at Scale\n\nProve's current setup involves AWS as the primary cloud provider, with Docker and Kubernetes for containerization and orchestration. They use Apache Airflow for workflow orchestration, and employ ML frameworks such as TensorFlow, PyTorch, and Scikit-learn. To address the scaling challenges, Anyscale's Ray could be introduced into this ecosystem, providing a distributed execution framework for Python applications that is well-suited for ML workloads.\n\nRay's ability to scale Python programs from a single laptop to a cluster seamlessly would enable Prove to process large-scale data efficiently. This could be particularly transformative for Prove's Trust Score® real-time risk scoring, which processes millions of lifecycle events daily. By distributing these computations across a cluster, Prove could significantly reduce latency and improve throughput.\n\n## Prove × Anyscale: Streamlining ML Workflows\n\nProve's reliance on a mixed MLOps environment with tools like Kubeflow, MLflow, and AWS SageMaker presents both flexibility and complexity. Anyscale could offer a unified platform for managing these ML workflows, providing a seamless interface to conduct distributed training, hyperparameter tuning, and model serving.\n\nHere's a concrete example of how Ray could be utilized to parallelize a machine learning task for Prove's use case:\n\n```python\nimport ray\nfrom ray.util.dask import ray_dask_get\nimport dask.dataframe as dd\n\n# Initialize Ray\nray.init(ignore_reinit_error=True)\n\n# Load a large dataset from a CSV file\ndf = dd.read_csv('large_dataset.csv')\n\n# Define a function to compute Trust Score® for a batch\n@ray.remote\ndef compute_trust_score(batch):\n    # Simulate ML inference\n    return batch.apply(lambda x: x['feature'] * 0.5)  # Placeholder logic\n\n# Split DataFrame into partitions for parallel processing\nbatches = df.to_delayed()\n\n# Map the remote function over the batches\ntrust_scores = ray.get([compute_trust_score.remote(batch) for batch in batches])\n\n# Combine results into a single DataFrame\nresult_df = dd.from_delayed(trust_scores)\n\n# Persist or further process result_df as needed\n```\n\n*The above code demonstrates how Ray could be used to parallelize the computation of Trust Scores® across large datasets, drastically reducing processing time compared to a single-node execution.*\n\n## Enhancing Real-Time and Batch Processing\n\nWith Anyscale, Prove could enhance both their real-time and batch processing capabilities. Ray's support for both synchronous and asynchronous task execution allows for flexible integration into existing microservices architectures, enabling Prove to optimize their API and serving layers for better performance and reliability.\n\n## Proposed Next Steps for Prove and Anyscale\n\n1. **Assessment and Planning:** Prove and Anyscale would conduct a joint assessment of Prove's current infrastructure and identify key areas where Ray's distributed computing capabilities could be integrated.\n\n2. **Pilot Implementation:** Develop a pilot project focused on one of Prove's critical use cases, such as real-time Trust Score® computation, to validate the impact of Ray's integration.\n\n3. **Scalability Workshop:** Host a technical workshop to train Prove's engineering teams on leveraging Ray and Anyscale for scalable ML and data workflows, ensuring a smooth transition and adoption across the organization.";
+    window.__blog1 = "## The Prove × Anyscale Vision: Scaling Identity Verification\n\nProve, an industry leader in digital identity verification, is exploring the potential collaboration with Anyscale to harness Ray's distributed computing capabilities. This partnership envisions addressing Prove's challenges in scaling machine learning workflows and prototypes within Python notebooks, ultimately enhancing their offerings across sectors like banking, fintech, and e-commerce.\n\n## How Prove and Anyscale Would Handle Data at Scale\n\nProve's current infrastructure, primarily built on AWS, supports high-volume identity verifications and risk assessments. However, as Prove continues to expand globally with initiatives like the ProveX Trust Exchange and the Global Identity Graph, the need to scale their data science prototypes efficiently becomes paramount. Anyscale, with its Ray framework, offers a compelling solution.\n\nBy leveraging Ray, Prove could easily parallelize their data processing tasks, which are currently orchestrated through Apache Airflow and executed in AWS's SageMaker. This would enable more efficient handling of Prove's vast datasets, reducing the time taken for feature engineering and model training.\n\n```python\nimport ray\nimport pandas as pd\nfrom sklearn.ensemble import RandomForestClassifier\n\n# Initialize Ray\nray.init()\n\n@ray.remote\ndef train_model(data_chunk):\n    # Example model training function\n    model = RandomForestClassifier()\n    X, y = data_chunk.drop('target', axis=1), data_chunk['target']\n    model.fit(X, y)\n    return model\n\n# Load a large dataset\ndata = pd.read_csv('large_identity_dataset.csv')\n\n# Split data into chunks and train models in parallel\nchunks = np.array_split(data, 10)  # Split into 10 parts for parallel processing\nmodels = ray.get([train_model.remote(chunk) for chunk in chunks])\n\n# This code would allow Prove to scale model training across multiple nodes, reducing time from hours to minutes.\n```\n\n## Streamlining Prove's Machine Learning Workflows\n\nThe proposed integration of Ray through Anyscale could streamline Prove's machine learning (ML) workflows, which currently involve a mix of tools like Kubeflow, MLflow, and SageMaker. Ray's ability to unify these workflows into a single, scalable system would significantly enhance efficiency, allowing Prove to deploy models faster and iterate on prototypes more effectively.\n\nMoreover, Prove's need for real-time risk scoring, exemplified by their Trust Score® system, would benefit from Ray's real-time computation capabilities. This would ensure that Prove continues to deliver low-latency, high-throughput identity verification services without compromising on the accuracy or security of their ML models.\n\n## Enhancing Prove's Microservices Architecture with Anyscale\n\nProve's microservices architecture, built on Kubernetes and using frameworks like FastAPI and gRPC, is already optimized for scaling individual services. However, integrating Anyscale would enable Prove to further optimize resource utilization and scalability. Ray's actor model and task scheduling could dynamically allocate resources to different microservices based on demand, ensuring consistent performance during peak loads.\n\nThis approach would allow Prove to maintain their competitive edge in the industry by offering more robust and scalable services, ultimately enhancing customer satisfaction and trust.\n\n## Proposed Next Steps for Prove and Anyscale\n\n1. **Proof of Concept Development**: Prove and Anyscale could collaborate on developing a proof of concept for integrating Ray into Prove's existing ML workflows. This would involve identifying key bottlenecks in current processes and demonstrating how Ray can alleviate these issues.\n\n2. **Technical Workshops and Training**: Host joint workshops for Prove's engineering and data science teams to familiarize them with Ray's capabilities and best practices for integration into their existing stack.\n\n3. **Pilot Deployment and Evaluation**: Implement a pilot deployment of Ray in one of Prove's critical workflows, such as Trust Score computation, to evaluate performance improvements and scalability benefits.\n";
+
+  // Render POV markdown
+  document.getElementById('pov-content').innerHTML = marked.parse("In the rapidly evolving landscape of AI and technology, companies like Prove are at the forefront, leveraging AI/ML to redefine digital identity verification and authentication. As Prove continues to innovate with sophisticated machine learning models, the scale and complexity of their operations grow exponentially. This narrative envisions how a collaboration with Anyscale could empower Prove to navigate these challenges and elevate their capabilities to unprecedented levels.\n\n## The Prove Scale Challenge\n\nProve's engineering team is tasked with managing a complex infrastructure to support their AI/ML initiatives, which include real-time fraud detection and identity verification at an immense scale. With over 1,000 enterprises relying on their services, including 19 of the top 20 U.S. banks, Prove processes tens of billions of identity requests annually. The current infrastructure, while robust, involves a mix of tools and platforms such as AWS for cloud services, Docker and Kubernetes for containerization, and Apache Airflow for workflow orchestration. However, this multi-layered setup presents challenges in scalability, orchestration, and real-time data processing.\n\nThe pain points are clear: data scientists prototype in Python notebooks, pipelines are orchestrated via Airflow and Kubeflow, and training occurs in SageMaker jobs. These disparate systems require extensive coordination and can lead to inefficiencies, especially when scaling to meet the demands of processing trillions of behavioral and telecom signals. Monitoring and addressing drift in models also add to the complexity, necessitating a more streamlined and scalable approach to infrastructure management.\n\n## What Prove and Anyscale Could Build Together\n\nA strategic partnership with Anyscale could transform Prove's infrastructure by leveraging Ray, a unified framework designed for distributed computing. This collaboration envisions a joint effort to enhance Prove's ML Ops, enabling more efficient scaling of their AI/ML models. Ray Data could be employed to efficiently manage and process large datasets in real-time, consolidating feature engineering and data preprocessing tasks into a single, cohesive pipeline.\n\nFurthermore, Ray Train could streamline Prove's model training processes, allowing for distributed training of complex ML models across multiple nodes without the overhead of manually managing SageMaker jobs. For real-time inference, Ray Serve could provide a robust, scalable serving layer, capable of handling the high throughput required for Prove's Trust Score® computations and other real-time risk scoring applications.\n\n## The Prove × Anyscale Architecture\n\nShould Prove decide to proceed with Anyscale, the envisioned architecture would seamlessly integrate with their existing cloud-native stack. The architecture would be built on AWS, with Ray providing the underlying framework for distributed computing. Docker and Kubernetes would continue to serve as the backbone for containerization and orchestration, while Anyscale's platform would simplify the deployment and management of Ray clusters.\n\nIn this setup, Prove's engineering team could operate a unified ML pipeline where Ray Data handles data ingestion and preprocessing at scale, feeding into Ray Train for distributed model training. The models would then be deployed using Ray Serve, ensuring low-latency, high-throughput inference. This architecture would unify Prove's ML workflows, reduce operational complexity, and enhance scalability.\n\n## Prove on Anyscale: What Becomes Possible\n\nBy partnering with Anyscale, Prove could unlock significant enhancements in their operational efficiency and technological capabilities. The integration of Ray would allow Prove to scale their AI/ML models seamlessly, improving the speed and accuracy of their identity verification and fraud detection processes. This could lead to reduced false declines and improved customer experiences across their primary use cases, such as digital account opening, customer login authentication, and transaction risk checks.\n\nIn essence, this collaboration could position Prove to not only meet but exceed the growing demands of their enterprise clients, enabling them to maintain their competitive edge as a leader in digital identity verification. The potential for innovation in AI/ML, made possible by Anyscale's technology, would be a transformative step forward for Prove in the digital identity landscape.");
+
+  // Blog toggle
+  function toggleBlog(i) {
+    const body = document.getElementById('blog-body-' + i);
+    const toggle = document.getElementById('blog-toggle-' + i);
+    const blogData = [window.__blog0, window.__blog1];
+    if (body.classList.contains('hidden')) {
+      if (!body.dataset.rendered) {
+        body.innerHTML = marked.parse(blogData[i] || '');
+        body.dataset.rendered = '1';
+        // Re-run hljs on any code blocks inside
+        body.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
+      }
+      body.classList.remove('hidden');
+      toggle.textContent = 'Collapse ↑';
+    } else {
+      body.classList.add('hidden');
+      toggle.textContent = 'Read article ↓';
+    }
+  }
+
+  // Syntax highlight code examples
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code').forEach(el => {
+      try { hljs.highlightElement(el); } catch(e) {}
+    });
+  });
+
+  // Mermaid — use JS API to avoid HTML-entity encoding issues
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: 'base',
+    flowchart: {
+      nodeSpacing: 30,
+      rankSpacing: 40,
+      padding: 6,
+      useMaxWidth: true,
+    },
+    themeVariables: {
+      primaryColor: '#EFF6FF',
+      primaryTextColor: '#1E40AF',
+      primaryBorderColor: '#93C5FD',
+      lineColor: '#60A5FA',
+      secondaryColor: '#F0FDF4',
+      tertiaryColor: '#FEF3C7',
+      fontSize: '11px',
+      nodePadding: '4',
+    },
+  });
+  (async () => {
+    const el = document.getElementById('mermaid-diagram');
+    if (!el) return;
+    try {
+      const diagram = "flowchart TD\n  subgraph dataIngestion\n    dataSources[Data Sources] --> rayData\n  end\n  subgraph rayComponents\n    rayData[Ray Data] --> rayTrain[Ray Train]\n    rayTrain --> modelStore[Model Registry]\n    modelStore --> rayServe[Ray Serve]\n  end\n  subgraph servingLayer\n    rayServe --> inferenceEndpoint[Inference Endpoint]\n  end\n  inferenceEndpoint --> downstreamApps[Downstream Applications]\n";
+      const { svg } = await mermaid.render('arch', diagram);
+      el.innerHTML = svg;
+      const svgEl = el.querySelector('svg');
+      svgEl.removeAttribute('height');
+      svgEl.setAttribute('width', '100%');
+      svgEl.style.maxWidth = '100%';
+      svgEl.style.height = 'auto';
+    } catch (e) {
+      el.innerHTML = '<p style="color:#ef4444;font-size:0.875rem">Diagram rendering failed: ' + e.message + '</p>';
+    }
+  })();
+</script>
+</body>
+</html>
