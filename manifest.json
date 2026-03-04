@@ -1,5 +1,30 @@
 [
   {
+    "slug": "teleworkerai",
+    "companyName": "teleworker.ai",
+    "industry": "Technology",
+    "createdBy": "Jordan Ashby ",
+    "createdAt": "2026-03-04T20:04:40.297Z",
+    "url": "https://anyscale-sales.github.io/prospect-microsites/teleworkerai/",
+    "prospectInput": {
+      "companyName": "teleworker.ai",
+      "companyDescription": "Teleworker.ai (and its companion product, Modelizer) helps the construction and facilities world turn today’s 2D building documents and on-site reality capture into usable 3D digital twins. Modelizer converts large sets of PDFs and plan sheets into parametric 3D BIM models (increasingly including MEP), while Teleworker uses robots to capture jobsite photos and point clouds to compare “as-built” vs",
+      "industry": "Technology",
+      "primaryUseCase": "Accelerate document-to-model pipelines for construction and facilities: parallel processing of large drawing sets (often 100+ page PDFs) to extract structured relationships (architectural, structural, and MEP) and generate 3D parametric BIM models, with a path toward near-real-time, human-in-the-loop review in a UI.",
+      "competitorContext": "Python + PyTorch computer vision pipeline, containerized with Docker on rented GPU servers. Some inference optimized with TensorRT. Moving workloads to cloud GPUs (Nebius) and planning to scale as volume and UI-driven “near real-time” expectations increase.",
+      "painPoints": [
+        "Slow turnaround on large plan sets",
+        "Not interactive enough for human-in-the-loop review",
+        "Hard to scale when multiple projects hit at once",
+        "MEP extraction is complex and compute-heavy",
+        "Every customer’s drawings differ and break assumptions",
+        "Need consistent pipelines despite custom requests",
+        "Speed gains must pencil out economically"
+      ],
+      "rayExperience": "new"
+    }
+  },
+  {
     "slug": "teleworker-ai",
     "companyName": "Teleworker AI ",
     "industry": "Technology",
