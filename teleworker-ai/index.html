@@ -52,8 +52,8 @@
       <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
       Personalized for Teleworker AI 
     </div>
-    <h1 class="text-5xl md:text-7xl font-bold leading-none tracking-tight mb-6 max-w-4xl">Teleworker AI × Anyscale: Real-Time 3D BIM Solutions</h1>
-    <p class="text-xl md:text-2xl text-blue-100/80 mb-10 max-w-2xl leading-relaxed">Together, we accelerate 2D-to-3D BIM model conversion, optimizing distributed AI simulations and scalability for on-demand, high-throughput architectural data processing.</p>
+    <h1 class="text-5xl md:text-7xl font-bold leading-none tracking-tight mb-6 max-w-4xl">Teleworker AI × Anyscale: Streamlined BIM Processing</h1>
+    <p class="text-xl md:text-2xl text-blue-100/80 mb-10 max-w-2xl leading-relaxed">Accelerating AI-driven document-to-BIM conversion with scalable parallel processing, enabling faster reviews and consistent infrastructure for diverse, multi-discipline drawing sets.</p>
     <div class="flex flex-wrap gap-4">
       <a href="#opportunity" class="inline-flex items-center px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-semibold transition-colors">
         Explore the opportunity →
@@ -76,51 +76,30 @@
       <div class="space-y-8 lg:pt-8">
         <div>
           <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Primary Use Case</p>
-          <p class="font-medium text-gray-800">distributed simulation rollouts + multi-agent/policy training (RL/IL) and high-throughput perception data preprocessing.Telework AI's primary use case involves processing drawings using AI to generate 3D parametric BIM models from standard 2D floor plans. They aim to speed up the inference side of this pipeline, ideally achieving real-time processing to reduce drawing processing time significantly (e.g., from one hour to five minutes).</p>
+          <p class="font-medium text-gray-800">Scale AI-driven document-to-BIM conversion by parallelizing large drawing-set processing (often 100+ page PDFs) and enabling faster, more interactive review workflows for digital twin creation.</p>
         </div>
         <div>
           <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Challenges We Solve</p>
           <ul class="space-y-2"><li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Telework AI's current infrastructure for GPU instances is on-demand
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Slow turnaround on large multi-discipline drawing sets
     </li>
 <li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>running jobs then scaling to zero
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Batch processing limits interactive, human-in-the-loop workflows
     </li>
 <li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>which means a persistent Ray cluster is seen as an added fixed cost without meaningful benefits for their current lack of sustained parallel training/inference jobs or growing user base with unpredictable demand spikes.
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Hard to scale elastically as new institutions and projects onboard
     </li>
 <li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>They face challenges with inference speed due to limitations of memory and GPU bandwidth on their rented hardware
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>MEP extraction requires heavier compute and iterative model training
     </li>
 <li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>and their current technical architecture struggles with recognition for more complex elements in their AI models.
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>High variability across legacy drawings reduces automation accuracy
     </li>
 <li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Potential scalability issues are a concern if they begin processing more clients beyond their current focus on one large client
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Need consistent back-end infrastructure despite custom client requests
     </li>
 <li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>and they need to accelerate their toolset to meet demand created by significantly dropped prices.
-    </li>
-<li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>For human-in-the-loop UI
-    </li>
-<li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>speed is crucial
-    </li>
-<li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>especially because AI currently struggles with certain inferences that humans make easily from drawings
-    </li>
-<li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>highlighting the value of faster UI connections to Ray.
-    </li>
-<li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>The company is resource-constrained
-    </li>
-<li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>and needs to be cautious about committing to heavy engagements
-    </li>
-<li class="flex items-start gap-2 text-sm text-gray-600">
-      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>as cost constraints dictate that any solution must ensure the cost of speeding up processes is less than the additional revenue generated.
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>Speed improvements must materially improve cost per square foot
     </li></ul>
         </div>
         <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
@@ -141,8 +120,8 @@
       
     <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(0)">
       <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 1 · 5 min read</p>
-      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Teleworker AI × Anyscale: A Technical Blueprint for Distributed Simulation Rollouts + Multi-Agent/Policy Training</h3>
-      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how Teleworker AI and Anyscale could transform distributed simulation rollouts and accelerate the processing of 3D parametric BIM models from 2D floor plans.</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Teleworker AI × Anyscale: A Technical Blueprint for Scale AI-driven document-to-BIM conversion by parallelizing large drawing-set processing (often 100+ page PDFs) and enabling faster, more interactive review workflows for digital twin creation.</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how Teleworker AI and Anyscale could transform the document-to-BIM conversion process, enabling parallelized, scalable processing of large drawing sets and interactive review workflows for digital twin creation.</p>
       <span class="text-sm font-medium text-blue-600" id="blog-toggle-0">Read article ↓</span>
       <div id="blog-body-0" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
     </div>
@@ -150,8 +129,8 @@
 
     <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(1)">
       <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 2 · 5 min read</p>
-      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Teleworker AI: Envisioning Scalable Infrastructure with Anyscale</h3>
-      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how Teleworker AI and Anyscale could revolutionize real-time 3D BIM model generation from 2D floor plans by leveraging scalable, distributed computing.</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Teleworker AI Could Solve Slow Turnaround on Large Multi-Discipline Drawing Sets at Scale with Anyscale</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how Teleworker AI and Anyscale could revolutionize the processing of large multi-discipline drawing sets, enabling faster and more interactive review workflows for digital twin creation.</p>
       <span class="text-sm font-medium text-blue-600" id="blog-toggle-1">Read article ↓</span>
       <div id="blog-body-1" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
     </div>
@@ -165,7 +144,7 @@
   <div class="max-w-6xl mx-auto px-6">
     <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Recommended Architecture</p>
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Your Reference Architecture</h2>
-    <p class="text-gray-500 max-w-2xl mb-12 leading-relaxed">Teleworker AI and Anyscale are collaborating to build a robust, scalable infrastructure leveraging Ray's components, enabling real-time processing of 2D floor plans into 3D BIM models. This architecture focuses on optimizing GPU utilization, enhancing inference speed, and minimizing costs by dynamically scaling resources to match demand.</p>
+    <p class="text-gray-500 max-w-2xl mb-12 leading-relaxed">Teleworker AI and Anyscale are collaboratively developing a scalable AI-driven architecture to optimize document-to-BIM conversion by streamlining multi-discipline drawing processing. This architecture leverages parallelization, cloud-based GPU scalability, and Ray components to enhance interactive review workflows and reduce costs.</p>
     <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 overflow-x-auto">
       <div id="mermaid-diagram" class="flex justify-center min-h-[120px] items-center"></div>
     </div>
@@ -188,7 +167,7 @@
         <div class="flex items-start justify-between gap-4">
           <div>
             <h3 class="font-semibold text-white text-lg mb-1">Ray Jobs for Production Batch Workloads</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">This template is designed for Teleworker AI's distributed simulation rollouts and multi-agent/policy training workloads, specifically focusing on high-throughput perception data preprocessing. By leveraging Anyscale, Teleworker AI can efficiently transform standard 2D floor plans into 3D parametric BIM models, significantly reducing processing time from one hour to just five minutes, thereby achieving near real-time inference speeds.</p>
+            <p class="text-gray-400 text-sm leading-relaxed">For Teleworker AI, this template streamlines the process of converting documents to Building Information Models (BIM) by leveraging Anyscale's powerful infrastructure to parallelize the processing of large drawing sets. By minimizing the boilerplate code and offering robust error handling and scalability, Teleworker AI's team can focus on enhancing their digital twin creation workflows without worrying about infrastructure complexities.</p>
           </div>
           <div class="flex gap-2 flex-shrink-0">
             <a href="https://github.com/anyscale/templates/tree/main/intro-jobs" target="_blank" rel="noopener"
@@ -204,238 +183,233 @@
           <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
             <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
           </div>
-          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's current infrastructure for scaling 3D model generation
-import multiprocessing
-import boto3
-import os
-import subprocess
-
-# Manual worker management
-def process_floor_plan(floor_plan):
-    try:
-        # Simulate processing
-        result = subprocess.run(['process', floor_plan], check=True)
-        # Manual checkpointing
-        with open(f'/tmp/{floor_plan}_result', 'w') as f:
-            f.write(result)
-    except Exception as e:
-        print(f'Error processing {floor_plan}: {e}')
-        # Manual retry
-        return process_floor_plan(floor_plan)
-
-# Spin up workers manually
-pool = multiprocessing.Pool(processes=4)
-floor_plans = ['plan1', 'plan2', 'plan3']
-results = pool.map(process_floor_plan, floor_plans)
-pool.close()
-pool.join()</code></pre>
-        </div>
-        <div>
-          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
-            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
-            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
-          </div>
-          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's optimized pipeline using Ray on Anyscale
-import ray
-
-ray.init()  # Connects to Anyscale
-
-@ray.remote
-def process_floor_plan(floor_plan):
-    # Auto-retries, distributed across cluster
-    return f'Processed {floor_plan}'
-
-floor_plans = ['plan1', 'plan2', 'plan3']
-# Distribute tasks across 8 GPUs, zero config changes
-results = ray.get([process_floor_plan.remote(fp) for fp in floor_plans])
-
-# Results automatically handled, no manual checkpointing
-print(results)</code></pre>
-        </div>
-      </div>
-    </div>
-  
-
-    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
-      <div class="p-6 border-b border-gray-800">
-        <div class="flex items-start justify-between gap-4">
-          <div>
-            <h3 class="font-semibold text-white text-lg mb-1">Image Classification Service (PyTorch/TensorRT)</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">This template is designed specifically for Teleworker AI's needs in distributed simulation rollouts, multi-agent/policy training (RL/IL), and high-throughput perception data preprocessing. It focuses on transforming 2D floor plans into 3D parametric BIM models using AI, with a goal to drastically reduce processing time from one hour to just five minutes. By leveraging Anyscale, Teleworker AI can achieve real-time processing capabilities, significantly enhancing their workflow efficiency.</p>
-          </div>
-          <div class="flex gap-2 flex-shrink-0">
-            <a href="https://github.com/anyscale/templates/tree/main/image-classification-service" target="_blank" rel="noopener"
-               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
-              GitHub ↗
-            </a>
-            
-          </div>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
-        <div>
-          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
-            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
-          </div>
-          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's current setup for scaling 2D to 3D model inference
-import multiprocessing
-import boto3
-import os
-import subprocess
-import time
-
-# Function to process a single drawing
-def process_drawing(drawing_id):
-    try:
-        # Simulate drawing processing
-        result = subprocess.run(['process_drawing_tool', drawing_id], check=True)
-        return result
-    except Exception as e:
-        print(f&quot;Error processing {drawing_id}: {e}&quot;)
-        return None
-
-# Manual worker management
-def worker_manager(drawing_ids):
-    results = []
-    with multiprocessing.Pool(processes=4) as pool:
-        for drawing_id in drawing_ids:
-            try:
-                result = pool.apply_async(process_drawing, (drawing_id,))
-                results.append(result.get())
-            except Exception as e:
-                print(f&quot;Error in worker manager: {e}&quot;)
-    return results
-
-# Checkpoint results manually
-def checkpoint_results(results):
-    s3 = boto3.client('s3')
-    for result in results:
-        if result:
-            try:
-                s3.put_object(Bucket='teleworker-ai-results', Key=f'{result}.json', Body=str(result))
-            except Exception as e:
-                print(f&quot;Failed to save {result} to S3: {e}&quot;)
-
-# Example usage
-if __name__ == '__main__':
-    drawing_ids = ['drawing1', 'drawing2', 'drawing3']
-    results = worker_manager(drawing_ids)
-    checkpoint_results(results)</code></pre>
-        </div>
-        <div>
-          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
-            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
-            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
-          </div>
-          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's optimized setup with Ray on Anyscale for 3D model inference
-import ray
-
-# Initialize Ray
-ray.init()
-
-# Define remote function for drawing processing
-@ray.remote
-def process_drawing(drawing_id):
-    # Simulate drawing processing
-    return f&quot;Processed {drawing_id}&quot;
-
-# Teleworker AI's distributed processing with Ray
-if __name__ == '__main__':
-    drawing_ids = ['drawing1', 'drawing2', 'drawing3']
-    # Launch remote tasks
-    results = ray.get([process_drawing.remote(drawing_id) for drawing_id in drawing_ids])
-    # Results automatically handled, no manual S3 writes
-    print(&quot;Processed results:&quot;, results)
-
-# Auto-scaling, fault-tolerance, and checkpointing handled by Ray
-ray.shutdown()</code></pre>
-        </div>
-      </div>
-    </div>
-  
-
-    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
-      <div class="p-6 border-b border-gray-800">
-        <div class="flex items-start justify-between gap-4">
-          <div>
-            <h3 class="font-semibold text-white text-lg mb-1">Multimodal Search (Images + Text)</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">This template is designed specifically for Teleworker AI, enabling efficient distributed simulation rollouts and multi-agent/policy training for RL/IL. It streamlines high-throughput perception data preprocessing, crucial for converting 2D floor plans into 3D parametric BIM models. By leveraging Anyscale, Teleworker AI can significantly accelerate the inference process, reducing drawing processing time from one hour to just five minutes, thus achieving near real-time results.</p>
-          </div>
-          <div class="flex gap-2 flex-shrink-0">
-            <a href="https://github.com/anyscale/templates/tree/main/ray-summit-multi-modal-search" target="_blank" rel="noopener"
-               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
-              GitHub ↗
-            </a>
-            
-          </div>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
-        <div>
-          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
-            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
-          </div>
-          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's current infrastructure without Ray
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's current approach to scaling document-to-BIM conversion
 import multiprocessing
 import boto3
 import subprocess
 import os
-import time
+
+# Manual worker spin-up
+num_workers = 4
+workers = []
+for _ in range(num_workers):
+    worker = subprocess.Popen(['python', 'worker_script.py'])
+    workers.append(worker)
 
 # Manual job queue management
-jobs = [...]  # Assume a list of jobs
-results = []
+job_queue = multiprocessing.Queue()
 
-# Function to process each job
-def process_job(job):
+# Manual error handling and retries
+for page in pdf_pages:
     try:
-        # Simulate processing
-        result = subprocess.run(['process', job], check=True)
-        return result
+        result = process_page(page)
+        job_queue.put(result)
     except Exception as e:
-        print(f'Error processing {job}: {e}')
-        return None
+        print(f&quot;Error processing page {page}: {e}&quot;)
+        # Retry logic
+        retry_page(page)
 
-# Manual retry and checkpointing
-for job in jobs:
-    retries = 3
-    while retries &gt; 0:
-        result = process_job(job)
-        if result:
-            results.append(result)
-            break
-        else:
-            retries -= 1
-            time.sleep(5)
-    # Checkpointing to disk
-    with open('checkpoint.txt', 'a') as f:
-        f.write(f'{job}\n')</code></pre>
+# Checkpoint to disk manually
+with open('checkpoint.pkl', 'wb') as f:
+    pickle.dump(job_queue, f)</code></pre>
         </div>
         <div>
           <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
             <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
             <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
           </div>
-          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's optimized infrastructure with Ray
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's improved workflow using Ray on Anyscale
 import ray
 
-# Initialize Ray
+# Define a remote function for page processing
+@ray.remote
+def process_page_remote(page):
+    return process_page(page)
+
+# Initialize Ray and distribute tasks
 ray.init()
 
-# Define remote function for job processing
+# Parallelize processing with Ray, auto-retries, and checkpoints
+results = ray.get([process_page_remote.remote(page) for page in pdf_pages])
+
+# No manual job queue management, Ray handles it
+# No manual worker spin-up, Ray auto-scales
+# Auto-checkpoints, no manual S3 writes
+# Observability built-in with Ray's dashboard</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Multi-Node LLM Deployment</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template empowers Teleworker AI to efficiently scale their AI-driven document-to-BIM conversion process by leveraging Anyscale's capabilities. By parallelizing the processing of large drawing sets, often comprising over 100 pages, the workflow becomes faster and more interactive, facilitating the creation of digital twins. This integration allows Teleworker AI's engineering team to focus on innovation rather than infrastructure management.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/ray_serve_llm" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's current infrastructure setup for scaling document-to-BIM conversion
+import multiprocessing
+import boto3
+import time
+import os
+
+# Manual job queue management
+job_queue = multiprocessing.Queue()
+results = []
+
+# Manual worker spin-up using subprocess
+for _ in range(4):
+    worker = multiprocessing.Process(target=process_document, args=(job_queue,))
+    worker.start()
+
+# Manual error handling and retries
+try:
+    while not job_queue.empty():
+        job = job_queue.get()
+        try:
+            result = process_document(job)
+            results.append(result)
+        except Exception as e:
+            print(f&quot;Error processing document: {e}&quot;)
+            time.sleep(5)  # Retry after delay
+            job_queue.put(job)  # Requeue the job
+except KeyboardInterrupt:
+    print(&quot;Interrupted, saving progress...&quot;)
+    with open('checkpoint.txt', 'w') as f:
+        f.write(str(results))</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's streamlined setup with Anyscale and Ray for document-to-BIM conversion
+import ray
+
+# Define a remote function with Ray
 @ray.remote
-def process_job(job):
-    # Simulate processing
-    return subprocess.run(['process', job], check=True)
+def process_document(document):
+    # Process the document
+    pass
 
-# List of jobs
-jobs = [...]  # Assume a list of jobs
+# Automatically distribute jobs across multiple workers
+job_ids = [process_document.remote(doc) for doc in document_list]
 
-# Process jobs concurrently with Ray
-results = ray.get([process_job.remote(job) for job in jobs])
+# Gather results with automatic retries and checkpointing
+results = ray.get(job_ids)  # auto-checkpoints, no manual S3 writes
 
-# Auto-retries and checkpoints handled by Ray, no manual intervention
-# Dramatically reduces code complexity and increases reliability</code></pre>
+# With tensor_parallelism, scale across 8 GPUs effortlessly
+# Faster, more interactive review workflows for digital twin creation</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Offline Batch LLM Inference at Scale</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template is specifically designed for Teleworker AI to enhance their document-to-BIM conversion process. By leveraging Anyscale, it parallelizes the processing of extensive drawing sets, often over 100-page PDFs, enabling faster and more interactive review workflows essential for digital twin creation. Teleworker AI's engineering team can now efficiently scale their AI-driven workflows with reduced complexity and increased reliability.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/batch-llm" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's current infrastructure for scaling document processing
+import multiprocessing
+from multiprocessing import Pool
+import boto3
+import os
+
+# Manual job queue management
+job_queue = [...]  # List of PDF files
+results = []
+
+# Function to process each document
+def process_document(doc):
+    try:
+        # Processing logic here
+        pass
+    except Exception as e:
+        print(f&quot;Error processing {doc}: {e}&quot;)
+        # Manual retry logic
+        retry_count = 0
+        while retry_count &lt; 3:
+            try:
+                # Retry logic
+                retry_count += 1
+            except Exception as e:
+                print(f&quot;Retry failed for {doc}: {e}&quot;)
+
+# Manual error handling and checkpoint
+def worker(doc):
+    try:
+        result = process_document(doc)
+        results.append(result)
+        # Checkpoint result to disk
+        with open('checkpoint.txt', 'a') as f:
+            f.write(f'{doc}: {result}\n')
+    except Exception as e:
+        print(f&quot;Error in worker: {e}&quot;)
+
+# Multiprocessing pool
+with Pool(processes=4) as pool:
+    pool.map(worker, job_queue)</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Teleworker AI's improved document processing with Anyscale and Ray
+import ray
+from ray import serve
+
+ray.init()  # Initialize Ray cluster
+
+# Define the processing function
+@ray.remote
+def process_document(doc):
+    # Processing logic here
+    return f&quot;Processed {doc}&quot;
+
+# Parallel execution with Ray
+job_queue = [...]  # List of PDF files
+
+# Launch multiple workers with Ray
+results = ray.get([process_document.remote(doc) for doc in job_queue])
+
+# Results are automatically checkpointed, no manual S3 writes
+print(results)
+
+# Enable scaling with zero config changes
+serve.start()  # Start Ray Serve for scalable inference</code></pre>
         </div>
       </div>
     </div>
@@ -482,11 +456,11 @@ results = ray.get([process_job.remote(job) for job in jobs])
 
 <script>
   // Blog post content
-  window.__blog0 = "# Teleworker AI × Anyscale: A Technical Blueprint for Distributed Simulation Rollouts + Multi-Agent/Policy Training\n\nTeleworker AI envisions a future where distributed simulation rollouts and multi-agent/policy training could be revolutionized through a strategic partnership with Anyscale. This collaboration could dramatically enhance Teleworker AI's ability to process 3D parametric Building Information Modeling (BIM) models from standard 2D floor plans, achieving near real-time processing speeds.\n\n## How Teleworker AI and Anyscale Would Handle Data at Scale\n\nTeleworker AI, operating within the architectural technology industry, currently faces challenges with inference speed and resource scalability. Utilizing Anyscale's distributed computing capabilities, Teleworker AI could leverage Ray to handle large-scale data efficiently. This approach would enable the seamless distribution of computational tasks across multiple nodes, addressing the limitations of memory and GPU bandwidth on rented hardware.\n\nBy integrating Ray's ability to parallelize tasks, Teleworker AI could see a significant reduction in drawing processing time—potentially down to five minutes from the current hour-long duration. Ray's actor-based model would allow for efficient management of stateful computations, crucial for complex AI models that Teleworker AI employs.\n\n## The Teleworker AI × Anyscale Vision for Simulation Rollouts\n\nEnvisioning a future collaboration, Teleworker AI could utilize Ray's RLlib for robust multi-agent reinforcement learning and imitation learning scenarios. This would facilitate the training of policies that require large-scale simulation rollouts, necessary for the sophisticated recognition tasks within their AI models.\n\nRay's scalability would offer Teleworker AI an edge in handling unpredictable demand spikes, ensuring that their infrastructure can dynamically adapt to varying workloads without incurring unnecessary costs. This flexibility is vital as Teleworker AI anticipates a growing user base and explores potential new client engagements.\n\n## Accelerating Teleworker AI's Inference Pipeline with Anyscale\n\nA partnership with Anyscale would empower Teleworker AI to optimize their inference pipeline, crucial for human-in-the-loop UI applications. By achieving faster UI connections to Ray, the responsiveness of AI models could be improved, facilitating quicker human intervention in cases where AI struggles with certain inferences.\n\n### Example: Distributed Image Processing with Ray\n\nThe following Python code example demonstrates how Teleworker AI could utilize Ray for distributed image processing, a key component in their BIM model generation pipeline:\n\n```python\nimport ray\nimport cv2\n\nray.init()\n\n@ray.remote\ndef process_image(image_path):\n    # Load image and convert to grayscale\n    img = cv2.imread(image_path)\n    gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)\n    # Detect edges using Canny algorithm\n    edges = cv2.Canny(gray_img, 100, 200)\n    # Return processed image\n    return edges\n\nimage_paths = ['floorplan1.png', 'floorplan2.png', 'floorplan3.png']\n# Parallel processing of images\nprocessed_images = ray.get([process_image.remote(img_path) for img_path in image_paths])\n```\n\n*This example illustrates how Ray could be utilized to process multiple floor plan images concurrently, accelerating the preprocessing stage essential for generating 3D BIM models.*\n\n## Teleworker AI × Anyscale: Next Steps\n\n1. **Proof of Concept**: Teleworker AI and Anyscale would collaborate to develop a proof of concept, demonstrating the feasibility of distributed simulation rollouts and accelerated inference using Ray.\n\n2. **Infrastructure Evaluation**: Conduct a comprehensive assessment of Teleworker AI's current infrastructure to identify integration points for Anyscale's distributed computing solutions.\n\n3. **Cost-Benefit Analysis**: Perform a detailed analysis to ensure the proposed acceleration strategies would yield a favorable return on investment, balancing cost constraints with expected revenue growth.\n";
-    window.__blog1 = "## Teleworker AI × Anyscale: A Vision for Scalable AI Infrastructure\n\nIn the rapidly evolving field of AI-driven building information modeling (BIM), Teleworker AI stands at the forefront, transforming 2D floor plans into 3D parametric models. However, achieving real-time processing remains a challenge due to infrastructure limitations, particularly in handling GPU instances on-demand. Anyscale, with its robust Ray framework, proposes a transformative collaboration that could address these challenges, unlocking new potentials for Teleworker AI.\n\n## Addressing Teleworker AI's Pain Points with Anyscale\n\nTeleworker AI's current infrastructure relies heavily on on-demand GPU instances, which scale to zero post-job execution. While cost-effective, this approach introduces latency and restricts scalability, particularly during unpredictable demand spikes. Furthermore, inference speed is hampered by memory and GPU bandwidth constraints, limiting the recognition of complex elements within their AI models.\n\nAnyscale's distributed computing capabilities, powered by Ray, present a compelling solution to these challenges. A partnership would enable Teleworker AI to maintain a flexible, scalable infrastructure that could handle both sustained and sporadic demand efficiently. By leveraging Anyscale's infrastructure, Teleworker AI could enhance its recognition capabilities, reduce processing time, and accommodate a larger client base without incurring prohibitive fixed costs.\n\n## How Teleworker AI and Anyscale Would Optimize Inference Speed\n\nThe need for rapid inference is crucial in Teleworker AI's workflow, particularly for human-in-the-loop interfaces where speed can significantly impact user experience. Anyscale could offer a scalable infrastructure that processes complex inferences faster, allowing Teleworker AI to achieve near-real-time 3D model generation.\n\nHere's a Python snippet using Ray to demonstrate how this could be achieved:\n\n```python\nimport ray\n\nray.init()\n\n@ray.remote\ndef process_floor_plan(floor_plan):\n    # Simulate processing a 2D floor plan to generate a 3D model\n    # This would involve AI-driven recognition and model generation\n    return \"3D model generated from {}\".format(floor_plan)\n\nfloor_plans = [\"plan1\", \"plan2\", \"plan3\"]\n\n# Distribute the processing tasks across available nodes\nresults = ray.get([process_floor_plan.remote(fp) for fp in floor_plans])\n\n# Output the results\nfor result in results:\n    print(result)\n```\n\n*This code demonstrates how Teleworker AI could distribute the processing of multiple floor plans simultaneously using Ray, significantly reducing the inference time.*\n\n## Enabling Scalability and Flexibility with Anyscale\n\nThe scalability offered by Anyscale would allow Teleworker AI to dynamically adjust resource allocation based on current demand. This flexibility ensures that resources are used efficiently, reducing costs while maintaining high performance during peak usage periods. Moreover, Anyscale's infrastructure supports high-throughput data preprocessing, a critical component of Teleworker AI's pipeline.\n\nA partnership would also enable Teleworker AI to focus on expanding its client base, confident in the knowledge that its infrastructure can support increased load without compromising performance.\n\n## Proposed Next Steps for Teleworker AI and Anyscale\n\nIf Teleworker AI were to move forward with Anyscale, the following steps are essential:\n\n1. **Pilot Project:** Initiate a small-scale pilot to test the integration of Anyscale's infrastructure with Teleworker AI's existing systems. This would involve validating the distributed processing capabilities and measuring improvements in processing time and recognition accuracy.\n\n2. **Cost-Benefit Analysis:** Conduct a detailed analysis to ensure that the cost savings from scalability and reduced processing time outweigh the investment in Anyscale's infrastructure, aligning with Teleworker AI's resource constraints.\n\n3. **Scalability Planning:** Develop a scalability plan that outlines how Teleworker AI can gradually expand its infrastructure with Anyscale, ensuring a smooth transition and preparation for handling additional clients and more complex processing tasks.\n\nIn conclusion, a partnership between Teleworker AI and Anyscale could revolutionize the way 2D floor plans are transformed into 3D models, offering scalability, speed, and efficiency that align with Teleworker AI's strategic goals.";
+  window.__blog0 = "## Teleworker AI × Anyscale: Envisioning a New Era in Document-to-BIM Conversion\n\nTeleworker AI is at the forefront of AI-driven document-to-BIM conversion, particularly in handling large multi-discipline drawing sets, often spanning over 100 pages. However, the company faces challenges in scalability, speed, and interactive workflows. Anyscale, with its capabilities in distributed computing and scalable infrastructure, could present a transformative partnership for Teleworker AI. This post explores a prospective vision of how Teleworker AI could leverage Anyscale to revolutionize its processes.\n\n## The Challenges Facing Teleworker AI\n\nCurrent workflows at Teleworker AI are constrained by the need to process large drawing sets sequentially, leading to slow turnaround times. The batch-processing nature of these workflows limits the ability to integrate human-in-the-loop interactions, essential for accurate and contextually aware BIM conversions. Moreover, scaling elastically to accommodate new institutions and projects remains a hurdle. The high variability in legacy drawings further complicates automation accuracy, necessitating consistent yet customizable backend infrastructure.\n\n## How Teleworker AI and Anyscale Would Handle Data at Scale\n\nA partnership with Anyscale could enable Teleworker AI to overcome these challenges by leveraging Ray, an open-source distributed computing framework. Ray excels at parallelizing tasks across multiple nodes, allowing Teleworker AI to process large drawing sets concurrently. This would not only reduce processing times but also enhance the interactive review workflows by providing near-real-time feedback and updates.\n\n## The Technical Vision: Parallelizing Large Drawing-Set Processing\n\nImagine a system where each page of a multi-page PDF drawing set is processed in parallel, using Ray to distribute the tasks across a scalable cloud infrastructure. This approach would significantly cut down processing times and improve the speed of digital twin creation.\n\n```python\nimport ray\n\n# Initialize Ray\nray.init()\n\n@ray.remote\ndef process_page(page_number):\n    # Simulated function to process a single page\n    # In reality, this would involve complex CV models\n    return f\"Processed page {page_number}\"\n\n# Assume a 100-page PDF\npages = list(range(1, 101))\n\n# Parallel processing of each page\nresults = ray.get([process_page.remote(page) for page in pages])\n\n# This would return a list of processed pages\nprint(results)\n```\n\n*This code snippet demonstrates how Teleworker AI could parallelize the processing of a 100-page PDF using Ray, significantly reducing the time required for document-to-BIM conversion.*\n\n## Enabling Faster, More Interactive Review Workflows\n\nBy integrating Anyscale's capabilities, Teleworker AI could offer more interactive and human-in-the-loop workflows. This would allow engineers to make real-time adjustments and validations, enhancing the overall accuracy and efficiency of BIM conversions.\n\n## Consistent and Cost-Effective Infrastructure\n\nAnyscale's infrastructure solutions could provide Teleworker AI with a consistent backend that is both scalable and cost-effective. This would ensure that the infrastructure can handle varying demands without escalating costs, aligning perfectly with Teleworker AI's cost-sensitive scaling strategy.\n\n## Proposed Next Steps for Teleworker AI and Anyscale\n\n1. **Pilot Project**: Initiate a pilot project to test the feasibility of integrating Ray for parallel processing of drawing sets, focusing on speed and accuracy improvements.\n\n2. **Infrastructure Assessment**: Conduct a comprehensive assessment of Teleworker AI's current infrastructure to identify areas where Anyscale's solutions could provide the most significant benefits.\n\n3. **Workflow Optimization**: Develop a plan to optimize existing workflows by incorporating interactive, human-in-the-loop processes enabled by Anyscale, aimed at improving the accuracy and speed of BIM conversions.\n\nIn conclusion, the potential partnership between Teleworker AI and Anyscale could redefine document-to-BIM conversion, addressing current pain points and unlocking new capabilities for scale and efficiency.";
+    window.__blog1 = "## How Teleworker AI × Anyscale Could Transform Digital Twin Creation\n\nTeleworker AI envisions a future where the slow turnaround on large, multi-discipline drawing sets becomes a thing of the past. By partnering with Anyscale, Teleworker AI could revolutionize the way AI-driven document-to-BIM (Building Information Modeling) conversion is executed, especially when dealing with complex, 100+ page PDFs. This approach would enable faster, more interactive review workflows, crucial for creating accurate digital twins of physical infrastructures.\n\n## Teleworker AI and Anyscale: Addressing Key Pain Points\n\nTeleworker AI's current setup involves Python and PyTorch computer vision pipelines, which are deployed on rented GPU servers. As customer demand grows, these workloads are migrating toward cloud GPU providers like Nebius. However, the process is fraught with challenges: slow turnaround on large drawing sets, batch processing that limits interactive workflows, and difficulty scaling elastically with new projects.\n\nAnyscale could provide the elasticity and scalability required to overcome these hurdles. By leveraging Ray, a distributed execution framework, Teleworker AI could parallelize the processing of large drawing sets, significantly improving turnaround times and enabling more interactive, human-in-the-loop workflows.\n\n## The Teleworker AI × Anyscale Approach\n\nIntegrating Anyscale's capabilities would allow Teleworker AI to scale their infrastructure elastically as new institutions and projects come on board. This partnership would enable the team to handle the heavy compute needs of MEP (Mechanical, Electrical, and Plumbing) extraction and iterative model training more efficiently.\n\nOne of the most compelling aspects of this collaboration would be the ability to handle high variability across legacy drawings, which often reduces automation accuracy. With Anyscale's help, Teleworker AI could build a more robust, consistent back-end infrastructure that adapts to custom client requests without compromising on performance.\n\n## A Demonstration: Python + Ray Code Example\n\nTo illustrate how this could work, consider the following Python code snippet utilizing Ray:\n\n```python\nimport ray\n\n# Initialize Ray\nray.init()\n\n@ray.remote\ndef process_drawing_set(drawing_set):\n    # Simulated processing for a single drawing set\n    print(f\"Processing {drawing_set}\")\n    return f\"Processed {drawing_set}\"\n\n# Assume we have a list of large drawing sets to process\nlarge_drawing_sets = [f\"drawing_set_{i}\" for i in range(100)]\n\n# Parallelize the processing of large drawing sets\nresults = ray.get([process_drawing_set.remote(drawing_set) for drawing_set in large_drawing_sets])\n\nprint(results)\n```\n\n*This code initializes Ray for distributed processing, allowing Teleworker AI to process multiple large drawing sets in parallel, significantly improving efficiency and turnaround times.*\n\n## The Teleworker AI and Anyscale Vision for Cost and Speed\n\nSpeed improvements must materially improve cost per square foot for Teleworker AI's clients. Anyscale's infrastructure would allow Teleworker AI to optimize their pipelines for both speed and cost-effectiveness, ensuring that these improvements are passed on to their clients.\n\n## Proposed Next Steps for Teleworker AI and Anyscale\n\n1. **Pilot Integration**: Begin with a pilot project to integrate Ray into Teleworker AI's existing pipelines, focusing on one or two key client projects.\n   \n2. **Scalability Testing**: Conduct extensive scalability tests to determine the elastic capabilities of Anyscale's infrastructure in handling Teleworker AI's unique workload demands.\n\n3. **Feedback Loop Implementation**: Establish a robust feedback loop for iterative model improvement, allowing for continuous adaptation to new drawing set variations and client requirements.\n\nBy embarking on these next steps, Teleworker AI and Anyscale could set a new standard in AI-driven document-to-BIM conversion, transforming how digital twins are created and maintained at scale.";
 
   // Render POV markdown
-  document.getElementById('pov-content').innerHTML = marked.parse("As the technology landscape rapidly evolves, the integration of artificial intelligence and machine learning into various sectors is reshaping industries. Teleworker AI, with its focus on digitizing the physical world through robotics and autonomy, stands at the forefront of this transformation. By creating digital twin counterparts for buildings, they are revolutionizing building construction and the broader AI/ML space. However, to sustain and accelerate this innovation, Teleworker AI faces critical infrastructure challenges that, if addressed, could propel them into new realms of efficiency and scalability.\n\n## The Teleworker AI Scale Challenge\n\nTeleworker AI's engineering team is grappling with significant infrastructure hurdles that impede their progress. Their primary use case centers on converting standard 2D floor plans into 3D parametric BIM models—a process that demands rapid iteration and real-time processing to improve efficiency. Currently, their infrastructure relies on GPU instances spun up on demand via Nebius. This setup, although flexible, poses limitations in terms of recognition capabilities and struggles with complex elements within their AI models. The lack of a persistent Ray cluster presents a challenge; while it offers flexibility, its absence means losing potential speed and efficiency gains in parallel training and inference jobs.\n\nThe unpredictability of demand spikes and the constraints of memory and GPU bandwidth on rented hardware exacerbate these challenges. Teleworker AI is resource-constrained, necessitating a cautious approach to infrastructure commitments. The company needs a solution that not only accelerates their processes but also aligns cost with revenue growth. An enhanced infrastructure would need to address these pain points directly, ensuring that any investment translates into tangible, scalable benefits.\n\n## What Teleworker AI and Anyscale Could Build Together\n\nA strategic partnership between Teleworker AI and Anyscale could unlock significant possibilities. By leveraging Ray Data, Ray Train, and Ray Serve, this collaboration envisions a robust, scalable framework tailored to Teleworker AI's unique needs. Ray Data could streamline their high-throughput perception data preprocessing, ensuring that data is both efficiently managed and readily available for real-time processing. Ray Train would facilitate distributed simulation rollouts and multi-agent policy training, optimizing resource utilization and enhancing the speed of model iteration.\n\nFurthermore, Ray Serve could offer a scalable solution for inference, addressing the current bottlenecks in memory and GPU bandwidth. By implementing Ray Serve, Teleworker AI could achieve near-real-time processing, drastically reducing drawing processing times from one hour to potentially just five minutes. This conditional proposal outlines a transformative approach to Teleworker AI's infrastructure, positioning them to meet and exceed client demands with agility and precision.\n\n## The Teleworker AI × Anyscale Architecture \n\nShould Teleworker AI choose to embark on this collaborative journey, they would operate on a cutting-edge Anyscale architecture designed for flexibility and performance. This architecture would feature a persistent Ray cluster, enabling sustained parallel training and inference jobs. By integrating with Anyscale's scalable infrastructure, Teleworker AI could seamlessly manage demand fluctuations without compromising on speed or efficiency.\n\nThe technical design would incorporate a dockerized environment, leveraging Nebius for GPU access while maintaining the flexibility of spinning up instances on demand. This integration would be supported by Anyscale's robust orchestration capabilities, ensuring that resources are optimally allocated and utilized. As a result, Teleworker AI's infrastructure would be both resilient and scalable, capable of handling increased client loads and complex AI model recognition tasks with ease.\n\n## Teleworker AI on Anyscale: What Becomes Possible\n\nBy partnering with Anyscale, Teleworker AI could achieve significant advancements in their primary use case. The potential outcomes include drastically reduced processing times for converting 2D floor plans into 3D models, enhanced recognition capabilities for complex elements, and improved UI speed for human-in-the-loop interfaces. These improvements would not only enhance their service offering but also position Teleworker AI as a leader in the digitization of the physical world. The potential for increased operational efficiency, scalability, and client satisfaction underscores the transformative power of a Teleworker AI and Anyscale partnership.");
+  document.getElementById('pov-content').innerHTML = marked.parse("The future of Technology AI is rapidly advancing towards sophisticated digital transformations, where the integration of artificial intelligence with robust infrastructural capabilities is essential for unlocking new possibilities. Teleworker AI is poised to be a pivotal player in this landscape by enhancing the digitization of the built environment. By collaborating with Modelizer, Teleworker AI is set to revolutionize how legacy buildings are transformed into smart, efficient structures through AI-powered BIM models and reality capture technologies. In this evolving ecosystem, the potential partnership with Anyscale presents an exciting opportunity to address the scale challenges and operational inefficiencies currently facing Teleworker AI.\n\n## The Teleworker AI Scale Challenge\n\nTeleworker AI's engineering team is currently grappling with the formidable challenge of scaling their AI-driven document-to-BIM conversion processes. The sheer volume and complexity of multi-discipline drawing sets, often exceeding 100 pages, result in slow turnaround times. The existing batch processing approach hinders interactive, human-in-the-loop workflows that are crucial for digital twin creation. Moreover, the need for heavy computational power to extract MEP (Mechanical, Electrical, and Plumbing) elements further complicates the scaling process, as it requires iterative model training to maintain accuracy across the diverse array of legacy drawings. Elastic scalability remains elusive, with infrastructure needing to accommodate new institutions and projects without significant overhead. The current reliance on rented GPU servers, while cost-sensitive, risks becoming a bottleneck as demand rises. Teleworker AI needs a consistent back-end infrastructure that can seamlessly adapt to custom client requests while also delivering material cost improvements per square foot of digitized space.\n\n## What Teleworker AI and Anyscale Could Build Together\n\nA partnership between Teleworker AI and Anyscale could unlock new levels of efficiency and scalability through the power of Ray, an open-source project enabling distributed computing. By leveraging Ray Data, Teleworker AI could parallelize the processing of large drawing sets, drastically reducing the time required to convert documents into BIM models. This parallelization would support more interactive review workflows, aligning with the company's commitment to human-in-the-loop collaboration. Ray Train could be instrumental in optimizing the model training processes for MEP extraction. It would enable distributed training across multiple GPUs, thus accelerating the iterative refinement necessary for maintaining high automation accuracy across variable legacy drawings.\n\nRay Serve could further enhance Teleworker AI's operational capabilities by providing a scalable model serving infrastructure. This would allow for the elastic deployment of AI models that power the reality capture and robotics workflows central to Teleworker AI's mission. Such a setup would ensure that customer demands are met promptly while maintaining cost efficiency. The collaboration envisions a future where Teleworker AI's infrastructure is robust, scalable, and seamlessly integrated with a cloud-based solution like Anyscale, tailored to meet the unique demands of the construction and building operations industry.\n\n## The Teleworker AI × Anyscale Architecture\n\nShould Teleworker AI choose to move forward with Anyscale, the architecture would be designed to harness the full potential of Ray's distributed computing capabilities. At its core, the system would utilize Ray Data to manage large-scale data processing, distributing tasks across available cloud GPU resources. This would be complemented by Ray Train's distributed training capabilities, enabling Teleworker AI to efficiently train and update its models in response to new data and client requirements.\n\nRay Serve would play a critical role in the architecture by offering a scalable model deployment solution, ensuring that inference workloads are handled efficiently as demand fluctuates. The proposed system would be containerized with Docker, preserving compatibility with Teleworker AI's existing Python and PyTorch pipelines, and seamlessly integrated with cloud GPU providers like Nebius. This architecture would provide the elasticity needed to accommodate new projects and institutions, while also adhering to cost sensitivity through optimized resource allocation.\n\n## Teleworker AI on Anyscale: What Becomes Possible\n\nBy partnering with Anyscale, Teleworker AI could achieve significant enhancements in their primary use case of document-to-BIM conversion. The distributed computing capabilities provided by Ray would allow for faster, more efficient processing of large drawing sets, enabling Teleworker AI to deliver digital twins with unprecedented speed and accuracy. The flexibility and scalability of the proposed architecture would support an expanding client base and the onboarding of new projects without compromising performance or cost efficiency. Ultimately, this partnership could propel Teleworker AI to the forefront of AI-driven digital twin creation, setting new standards for smart, efficient building operations in the built environment.");
 
   // Blog toggle
   function toggleBlog(i) {
@@ -540,7 +514,7 @@ results = ray.get([process_job.remote(job) for job in jobs])
     const el = document.getElementById('mermaid-diagram');
     if (!el) return;
     try {
-      const diagram = "flowchart TD\n  subgraph dataIngestion[Data Ingestion Layer]\n    drawings[2D Floor Plan Drawings] --> rayData\n  end\n  subgraph rayComponents[Ray Components]\n    rayData[Ray Data] --> rayTrain\n    rayTrain[Ray Train] --> modelReg\n    modelReg[Model Registry] --> rayServe\n    rayServe[Ray Serve] --> inferenceEndpoint\n  end\n  subgraph modelStorage[Model Registry / Storage]\n    modelReg[Model Registry]\n  end\n  subgraph inference[inference and Serving]\n    inferenceEndpoint[Serving Inference Endpoint] --> downstreamApps\n  end\n  subgraph downstream[Downstream Consumers]\n    downstreamApps[3D BIM Applications]\n  end";
+      const diagram = "flowchart TD\n  subgraph DataIngestion\n    pdfs[PDF Drawings]\n    metadata[Legacy Metadata]\n  end\n  subgraph RayProcessing\n    rayData[Ray Data]\n    rayTrain[Ray Train]\n    rayServe[Ray Serve]\n  end\n  subgraph Storage\n    modelReg[Model Registry]\n    drawingStorage[Drawing Storage]\n  end\n  subgraph Inference\n    inferenceEndpoint[Serving Endpoint]\n  end\n  subgraph Consumers\n    digitalTwin[Digital Twin Creation]\n    reviewWorkflow[Review Workflow]\n  end\n  pdfs --> rayData\n  metadata --> rayData\n  rayData --> rayTrain\n  rayTrain --> modelReg\n  modelReg --> rayServe\n  rayServe --> inferenceEndpoint\n  inferenceEndpoint --> digitalTwin\n  inferenceEndpoint --> reviewWorkflow\n  drawingStorage --> rayData";
       const { svg } = await mermaid.render('arch', diagram);
       el.innerHTML = svg;
       const svgEl = el.querySelector('svg');
