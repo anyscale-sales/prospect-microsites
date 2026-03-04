@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exodus Point Capital Management × Anyscale</title>
+  <link rel="icon" type="image/png" href="https://anyscale-sales.github.io/prospect-microsites/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .prose h1,.prose h2 { font-size:1.5rem; font-weight:700; margin:2rem 0 1rem; color:#111827; }
+    .prose h3 { font-size:1.125rem; font-weight:600; margin:1.5rem 0 0.5rem; color:#1f2937; }
+    .prose p { margin:1rem 0; }
+    .prose ul { list-style:disc; padding-left:1.5rem; margin:1rem 0; }
+    .prose li { margin:0.4rem 0; }
+    .prose strong { font-weight:600; }
+    .prose code { background:#f1f5f9; padding:0.1rem 0.35rem; border-radius:0.25rem; font-size:0.85em; font-family:monospace; }
+    .prose pre { background:#0f172a; padding:1.25rem; border-radius:0.75rem; overflow-x:auto; margin:1.25rem 0; }
+    .prose pre code { background:none; padding:0; color:#e2e8f0; font-size:0.85em; }
+    .prose blockquote { border-left:3px solid #3b82f6; padding-left:1rem; color:#6b7280; font-style:italic; margin:1.25rem 0; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="https://anyscale-sales.github.io/prospect-microsites/logo.png" alt="Anyscale" class="h-7 w-auto" />
+      <span class="font-semibold text-sm text-gray-900">Exodus Point Capital Management × Anyscale</span>
+    </div>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#opportunity" class="text-gray-500 hover:text-gray-900 transition-colors">Opportunity</a>
+      <a href="#deep-dives" class="text-gray-500 hover:text-gray-900 transition-colors">Deep Dives</a>
+      <a href="#architecture" class="text-gray-500 hover:text-gray-900 transition-colors">Architecture</a>
+      <a href="#code" class="text-gray-500 hover:text-gray-900 transition-colors">Code</a>
+      <a href="#next-steps" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-full transition-colors font-medium">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative pt-32 pb-28 bg-gray-950 text-white overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(59,130,246,0.25),transparent)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_60%,rgba(99,102,241,0.15),transparent)]"></div>
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-1.5 text-sm mb-8 backdrop-blur-sm">
+      <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+      Personalized for Exodus Point Capital Management
+    </div>
+    <h1 class="text-5xl md:text-7xl font-bold leading-none tracking-tight mb-6 max-w-4xl">Exodus Point Capital Management × Anyscale: Advancing Financial AI</h1>
+    <p class="text-xl md:text-2xl text-blue-100/80 mb-10 max-w-2xl leading-relaxed">Harnessing NLP and GenAI to enhance investment strategies, streamline operations, and optimize real-time risk analytics for multi-asset portfolios.</p>
+    <div class="flex flex-wrap gap-4">
+      <a href="#opportunity" class="inline-flex items-center px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-semibold transition-colors">
+        Explore the opportunity →
+      </a>
+      <a href="#next-steps" class="inline-flex items-center px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg font-semibold transition-colors backdrop-blur-sm">
+        Book a demo
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- POV / Opportunity -->
+<section id="opportunity" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+      <div class="lg:col-span-2">
+        <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">The Opportunity</p>
+        <div class="prose text-gray-700 leading-relaxed" id="pov-content"></div>
+      </div>
+      <div class="space-y-8 lg:pt-8">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Primary Use Case</p>
+          <p class="font-medium text-gray-800">Identified Use Cases: NLP / Signal Extraction: Parsing news feeds, earnings calls, macro data, central bank communications for alpha signals LLMs / GenAI: Internal productivity tools, research synthesis, document Q&amp;A for investment and operations teams Systematic/Quant Model Training: Tree-based models, time-series forecasting, factor models, regression-based predictors Backtesting &amp; Simulation: Historical strategy validation across large datasets Risk Analytics: Real-time and batch risk model inference across multi-asset portfolios Data Sourcing &amp; Feature Engineering: Proprietary data pipelines for alternative data ingestion Workload Types:  Primarily batch inference and batch training, with some real-time inference for live signal generation. NLP pipelines are likely batch/offline. Risk models may require near-real-time inference. Fine-tuning of domain-specific LLMs is a likely near-term workload given the GenAI transformation mandate.</p>
+        </div>
+        
+        <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
+          <p class="text-sm font-semibold text-blue-800 mb-1">Built on Ray</p>
+          <p class="text-xs text-blue-600 leading-relaxed">The unified open-source framework for distributed AI — data processing, training, and serving at any scale.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Posts -->
+<section id="deep-dives" class="py-24 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Deep Dives</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Technical Guides for Your Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(0)">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 1 · 5 min read</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Exodus Point Capital Management × Anyscale: A Technical Blueprint for Identified Use Cases</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how Exodus Point Capital Management and Anyscale could revolutionize financial data processing and analytics through cutting-edge technology collaboration.</p>
+      <span class="text-sm font-medium text-blue-600" id="blog-toggle-0">Read article ↓</span>
+      <div id="blog-body-0" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
+    </div>
+  
+
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(1)">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 2 · 5 min read</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Exodus Point Capital Management: Envisioning a Partnership with Anyscale for Enhanced Financial Data Processing</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how Exodus Point Capital Management and Anyscale could collaborate to leverage scalable AI and ML solutions for financial data processing and analysis.</p>
+      <span class="text-sm font-medium text-blue-600" id="blog-toggle-1">Read article ↓</span>
+      <div id="blog-body-1" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
+    </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- Architecture -->
+<section id="architecture" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Recommended Architecture</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Your Reference Architecture</h2>
+    <p class="text-gray-500 max-w-2xl mb-12 leading-relaxed">Exodus Point Capital Management and Anyscale are collaboratively building a comprehensive architecture leveraging Ray's distributed computing capabilities. This architecture is designed to efficiently manage NLP signal extraction, LLM fine-tuning, quant model training, backtesting, risk analytics, and data sourcing, with a focus on batch processing and some real-time inference.</p>
+    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 overflow-x-auto">
+      <div id="mermaid-diagram" class="flex justify-center min-h-[120px] items-center"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Code Examples -->
+<section id="code" class="py-24 bg-gray-950">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">Getting Started</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Curated Code Examples</h2>
+    <p class="text-gray-400 mb-12 max-w-2xl leading-relaxed">
+      Production-ready templates from the Anyscale library, selected for your use case.
+      Clone and run in minutes on Anyscale.
+    </p>
+    <div class="space-y-6">
+      
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">LLM Batch Inference with Ray Data</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template simplifies the process of scaling NLP and LLM workloads for Exodus Point Capital Management, allowing the team to efficiently parse news feeds, earnings calls, and macro data for alpha signals. By leveraging Anyscale's integration with Ray, the engineering team can eliminate cumbersome infrastructure management and focus on generating insights through batch inference and training, enhancing productivity and accelerating the GenAI transformation mandate.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/ray-data-llm" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Exodus Point Capital Management's current infrastructure setup for batch inference
+import multiprocessing
+import boto3
+import os
+import subprocess
+
+# Manual setup of worker pool
+pool = multiprocessing.Pool(processes=4)
+results = []
+
+# Manual retry and error handling
+for task in tasks:
+    try:
+        result = pool.apply_async(process_task, (task,))
+        results.append(result)
+    except Exception as e:
+        print(f&quot;Error processing task {task}: {e}&quot;)
+
+# Manual checkpoint to disk
+for result in results:
+    try:
+        data = result.get()
+        with open(f&quot;checkpoint_{task_id}.pkl&quot;, &quot;wb&quot;) as f:
+            pickle.dump(data, f)
+    except Exception as e:
+        print(f&quot;Error saving result for task {task_id}: {e}&quot;)
+
+# Manual S3 upload
+s3 = boto3.client('s3')
+for file in os.listdir('checkpoints'):
+    try:
+        s3.upload_file(file, 'my-bucket', file)
+    except Exception as e:
+        print(f&quot;Error uploading {file} to S3: {e}&quot;)</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Streamlined batch inference using Ray for Exodus Point Capital Management
+import ray
+from ray import serve
+
+ray.init()  # Auto-scaling, no manual worker setup
+
+@ray.remote
+def process_task(task):
+    # Task processing logic
+    return processed_data
+
+# Distribute tasks across multiple workers
+results = ray.get([process_task.remote(task) for task in tasks])
+
+# Ray handles checkpointing and data persistence
+# Serve setup for real-time inference
+serve.start()
+
+@serve.deployment
+class InferenceService:
+    def __call__(self, request):
+        # Real-time inference logic
+        return inference_result
+
+InferenceService.deploy()  # Zero config changes, auto-scaling</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Fine-tune LLMs (Llama, Mistral)</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template enables Exodus Point Capital Management to streamline their NLP and signal extraction processes by leveraging Anyscale's capabilities. By transitioning from manual infrastructure management to Ray's scalable architecture, the team can focus on fine-tuning domain-specific LLMs and optimizing risk analytics in real-time, enhancing their investment strategies and operational efficiency.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/fine-tune-llm_v2" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Exodus Point Capital Management's current setup for NLP batch processing
+import multiprocessing
+import boto3
+import os
+import subprocess
+import time
+
+# Manual job queue management
+jobs = []
+for i in range(10):
+    p = multiprocessing.Process(target=parse_data, args=(i,))
+    jobs.append(p)
+    p.start()
+
+# Manual error handling and retry
+for job in jobs:
+    try:
+        job.join()
+    except Exception as e:
+        print(f&quot;Error: {e}&quot;)
+        # Retry logic
+        time.sleep(5)
+        job.start()
+
+# Checkpoint to disk
+with open('checkpoint.txt', 'w') as f:
+    f.write('Checkpoint data')
+
+# Spin up workers manually
+subprocess.run(['aws', 'ec2', 'run-instances', '--image-id', 'ami-123456'])</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Streamlined with Anyscale and Ray for Exodus Point Capital Management
+import ray
+from ray import serve
+
+# Define a Ray Serve deployment for NLP processing
+@serve.deployment
+class NLPProcessor:
+    def __call__(self, data):
+        # Process data here
+        return parse_data(data)
+
+# Deploy with Ray Serve, auto-scaling enabled
+ray.init()
+NLPProcessor.deploy()
+
+# Execute tasks with Ray, auto-retries and checkpoints
+results = ray.get([NLPProcessor.remote(data) for data in dataset])
+
+# No manual infrastructure handling, 8 GPUs with zero config changes
+print(&quot;Processing complete.&quot;)</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Offline Batch LLM Inference at Scale</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Exodus Point Capital Management can leverage this template to streamline their NLP and signal extraction processes, parsing vast amounts of financial data like news feeds and earnings calls for alpha generation. By transitioning to Anyscale, the team can efficiently handle batch inference and training workloads, crucial for their systematic model training and risk analytics, without the infrastructure overhead.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/batch-llm" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Exodus Point Capital Management's current manual infrastructure setup
+import multiprocessing
+import boto3
+import time
+
+# Function to process data
+def process_data(data_chunk):
+    try:
+        # Simulate processing
+        result = complex_computation(data_chunk)
+        # Simulate saving result
+        save_to_s3(result)
+    except Exception as e:
+        print(f&quot;Error processing data: {e}&quot;)
+
+# Manual worker pool setup
+pool = multiprocessing.Pool(processes=4)
+
+# Manual job queue management
+jobs = [pool.apply_async(process_data, (chunk,)) for chunk in data_chunks]
+
+# Manual error handling and retry
+for job in jobs:
+    try:
+        job.get(timeout=10)
+    except multiprocessing.TimeoutError:
+        print(&quot;Job timed out&quot;)
+
+# Manual checkpointing
+checkpoint_to_disk()</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Exodus Point Capital Management's streamlined setup with Anyscale and Ray
+import ray
+
+ray.init()  # Connects to Anyscale cluster
+
+# Function to process data, now remote
+@ray.remote
+def process_data(data_chunk):
+    # Simulate processing
+    return complex_computation(data_chunk)
+
+# Distribute tasks across multiple workers
+results = ray.get([process_data.remote(chunk) for chunk in data_chunks])
+
+# Auto-checkpoints, no manual S3 writes
+# Ray handles retries and worker failures
+# Efficiently scales across cluster with zero manual config
+</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Ray Jobs for Production Batch Workloads</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">For Exodus Point Capital Management, this template streamlines the scaling of batch inference and training workloads crucial for NLP and signal extraction. By leveraging Ray on Anyscale, the team can efficiently parse news feeds, earnings calls, and macro data for alpha signals, while also enhancing productivity tools and research synthesis through LLMs.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/intro-jobs" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Exodus Point Capital Management's current infrastructure for NLP signal extraction
+import multiprocessing
+import boto3
+import os
+import subprocess
+import time
+
+# Manual setup for worker processes
+pool = multiprocessing.Pool(processes=4)
+results = []
+
+try:
+    for i in range(10):
+        result = pool.apply_async(parse_data, args=(i,))
+        results.append(result)
+except Exception as e:
+    print(f&quot;Error occurred: {e}&quot;)
+    # Manual retry logic
+    time.sleep(5)
+    continue
+
+# Manual state tracking and checkpointing
+for result in results:
+    try:
+        output = result.get(timeout=10)
+        # Save to S3 manually
+        boto3.client('s3').put_object(Bucket='my-bucket', Key=f'result_{i}.json', Body=output)
+    except Exception as e:
+        print(f&quot;Failed to process result: {e}&quot;)</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Simplified infrastructure using Ray for Exodus Point Capital Management's NLP workloads
+import ray
+
+# Define remote function with automatic error handling and checkpointing
+@ray.remote
+def parse_data(i):
+    # Processing logic
+    return f&quot;Processed data {i}&quot;
+
+# Initialize Ray
+ray.init()
+
+# Launch jobs with Ray, automatically scaling and managing workers
+results = [parse_data.remote(i) for i in range(10)]
+
+# Retrieve results with automatic retries and state management
+outputs = ray.get(results)  # auto-checkpoints, no manual S3 writes
+
+# Clean up Ray resources
+del outputs  # 8 GPUs, zero config changes</code></pre>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- Next Steps -->
+<section id="next-steps" class="py-24 bg-blue-600 text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-200 mb-4">Next Steps</p>
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+      Ready to accelerate Exodus Point Capital Management's AI journey?
+    </h2>
+    <p class="text-xl text-blue-100 mb-14 max-w-2xl mx-auto leading-relaxed">
+      Join leading AI teams who scaled from prototype to production with Anyscale.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+      <a href="https://www.anyscale.com/contact" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Talk to an Engineer</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">Get a technical walkthrough of your specific use case</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Schedule a call →</span>
+      </a>
+      <a href="https://console.anyscale.com/" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Start Free Trial</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">Run your first workload on Anyscale today — no setup required</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Get started →</span>
+      </a>
+      <a href="https://www.anyscale.com/demo" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Book a Demo</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">See how teams like yours build and scale with Ray on Anyscale</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Book now →</span>
+      </a>
+    </div>
+    <p class="text-blue-200 text-sm">
+      Questions? Email <a href="mailto:sales@anyscale.com" class="underline hover:text-white">sales@anyscale.com</a>
+    </p>
+  </div>
+</section>
+
+<script>
+  // Blog post content
+  window.__blog0 = "## The Exodus Point Capital Management × Anyscale Vision\n\nIn an era where data is the new oil, Exodus Point Capital Management would benefit from a strategic partnership with Anyscale, leveraging distributed computing solutions to meet the demands of modern financial analytics. Anyscale, built on the open-source Ray framework, offers a unique proposition for scaling Python applications that could transform how Exodus Point Capital Management handles data processing, model training, and real-time analytics.\n\n## How Exodus Point Capital Management and Anyscale Would Handle Data at Scale\n\nExodus Point Capital Management operates in the fast-paced financial services industry, where the ability to process vast datasets swiftly and accurately is a competitive advantage. With existing infrastructures often relying on a combination of on-premise and cloud solutions, the integration of Anyscale could offer a seamless transition to a more robust, scalable computational backend.\n\nAnyscale's distributed computing capabilities would enable Exodus Point Capital Management to efficiently manage workloads that are primarily batch inference and training, with some real-time inference for live signal generation. This approach would be particularly beneficial for parsing news feeds, earnings calls, and macroeconomic data to extract alpha signals, an area ripe for optimization.\n\n## Enhancing NLP and Signal Extraction with Exodus Point Capital Management × Anyscale\n\nNatural Language Processing (NLP) is crucial for financial firms that need to parse and analyze unstructured data quickly. By employing Anyscale's scalable infrastructure, Exodus Point Capital Management could enhance its NLP capabilities, processing complex datasets faster and with greater accuracy. The batch/offline nature of NLP pipelines could be efficiently managed, enhancing the extraction of actionable insights from textual data.\n\n```python\nimport ray\n\nray.init()\n\n# Assume `parse_news_feed` is a function to parse and analyze news data for signals\n@ray.remote\ndef parse_news_feed(news_data_chunk):\n    # Processing logic here\n    return analyzed_data\n\nnews_data = load_news_data()\n# Parallel processing of news data chunks\nresults = ray.get([parse_news_feed.remote(chunk) for chunk in news_data])\n\n# Results would contain signals extracted from the news data\n```\n\n*This code snippet demonstrates how Exodus Point Capital Management could use Ray to parallelize the parsing of news feeds, enhancing the speed and efficiency of signal extraction.*\n\n## Revolutionizing Systematic and Quant Model Training\n\nExodus Point Capital Management could see significant improvements in its systematic and quantitative model training by utilizing Anyscale's capabilities. Whether it's tree-based models, time-series forecasting, or regression-based predictors, Anyscale would allow for more efficient training across distributed systems, reducing time-to-insight and improving model accuracy.\n\n## Real-time Risk Analytics with Exodus Point Capital Management and Anyscale\n\nRisk analytics is another area where this partnership could shine. Anyscale would enable near-real-time risk model inference across multi-asset portfolios, a critical capability for maintaining a competitive edge in the financial services industry. This would allow Exodus Point Capital Management to manage risk more dynamically and responsively.\n\n## Proposed Next Steps for Exodus Point Capital Management and Anyscale\n\n1. **Pilot Phase**: Initiate a small-scale pilot project to integrate Ray into one of the existing NLP pipelines, allowing the team to assess performance improvements and scalability.\n\n2. **Training Workshops**: Conduct a series of workshops focused on training Exodus Point Capital Management's IT and data science teams on Ray and Anyscale.\n\n3. **Infrastructure Assessment**: Collaborate on a detailed assessment of current infrastructure to identify specific areas where Anyscale's distributed computing capabilities could provide the most value.\n";
+    window.__blog1 = "## The Exodus Point Capital Management × Anyscale Vision\n\nExodus Point Capital Management, a leader in the financial services industry, is exploring innovative ways to optimize its data processing and investment decision-making strategies. Anyscale, with its cutting-edge distributed computing platform, offers a compelling opportunity to enhance Exodus Point's capabilities across several critical domains, including Natural Language Processing (NLP), Large Language Models (LLMs), systematic model training, and risk analytics.\n\n## How Exodus Point Capital Management and Anyscale Would Revolutionize NLP and Signal Extraction\n\nIn the fast-paced world of hedge funds, extracting actionable insights from unstructured data sources like news feeds, earnings calls, and macroeconomic data is crucial. Anyscale could empower Exodus Point to scale their NLP operations using Ray, enabling efficient parsing and signal extraction across large datasets. By leveraging Ray's parallel processing capabilities, Exodus Point could transform its existing pipelines into highly efficient, scalable systems, thereby enhancing the speed and accuracy of alpha signal generation.\n\n## Enhancing Internal Productivity with LLMs and GenAI\n\nExodus Point Capital Management could benefit from deploying LLMs and GenAI tools for improving internal productivity and research synthesis. Anyscale's platform would allow Exodus Point to fine-tune domain-specific LLMs, facilitating advanced document Q&A, and synthesis tasks across investment and operations teams. This approach would streamline decision-making processes and foster a data-driven culture, ultimately driving better investment outcomes.\n\n## Systematic Model Training and Backtesting: A New Frontier\n\nThe systematic/quant model training needs of Exodus Point are complex and computationally intensive. With Anyscale, Exodus Point could efficiently train tree-based models, time-series forecasting, and regression-based predictors at scale. Additionally, Anyscale's ability to handle large-scale backtesting and simulation would provide Exodus Point with robust historical strategy validation, ensuring reliability and performance across diverse market conditions.\n\n## Real-Time Risk Analytics for Multi-Asset Portfolios\n\nRisk management is a cornerstone of Exodus Point's investment strategy. Anyscale could enable real-time and batch risk model inference, providing Exodus Point with the tools necessary to manage multi-asset portfolios dynamically. This capability would enhance the firm's risk analytics framework, offering near-real-time insights into potential risk exposures and allowing for timely strategic adjustments.\n\n## Data Sourcing & Feature Engineering: Building Proprietary Pipelines\n\nTo maintain a competitive edge, Exodus Point could leverage Anyscale to build proprietary data pipelines for alternative data ingestion. This partnership would facilitate the creation of sophisticated feature engineering techniques, enabling Exodus Point to extract maximum value from both traditional and alternative data sources. Anyscale's scalable infrastructure would ensure these pipelines can grow with the firm's evolving data needs.\n\n## A Python + Ray Code Example for Signal Extraction\n\n```python\nimport ray\nimport pandas as pd\n\n@ray.remote\ndef process_data_chunk(chunk):\n    # Perform NLP and signal extraction on each data chunk\n    signals = chunk.apply(nlp_signal_extraction_function)\n    return signals\n\n# Assume `data` is a large DataFrame containing news articles\nchunks = [data[i:i+1000] for i in range(0, data.shape[0], 1000)]\n\n# Distribute the processing of data chunks across a Ray cluster\nfutures = [process_data_chunk.remote(chunk) for chunk in chunks]\nresults = ray.get(futures)\n\n# Combine results into a single DataFrame\nall_signals = pd.concat(results)\n```\n\n*This code snippet demonstrates how Exodus Point Capital Management could use Ray to distribute the processing of large datasets for NLP and signal extraction, enhancing the speed and efficiency of their data analysis pipelines.*\n\n## Proposed Next Steps for Exodus Point Capital Management and Anyscale\n\n1. **Pilot Program Development**: Initiate a pilot program to test the scalability and efficiency of Anyscale's platform for specific use cases, such as NLP signal extraction and LLM fine-tuning.\n\n2. **Infrastructure Assessment**: Conduct a comprehensive assessment of Exodus Point's current infrastructure to identify areas of improvement and integration opportunities with Anyscale.\n\n3. **Workshops and Training**: Organize joint workshops and training sessions to familiarize Exodus Point's teams with Ray and the Anyscale platform, ensuring smooth adoption and usage.\n";
+
+  // Render POV markdown
+  document.getElementById('pov-content').innerHTML = marked.parse("As the financial services sector continues its rapid evolution, the integration of artificial intelligence (AI) becomes increasingly pivotal. Hedge funds, like Exodus Point Capital Management, stand at the forefront of this transformation. With their commitment to leveraging cutting-edge technologies for investment strategies, Exodus Point Capital Management is well-positioned to harness AI's full potential. By addressing market inefficiencies through a blend of quantitative models and fundamental research, the firm exemplifies how AI can redefine financial strategies. In this future landscape, Exodus Point Capital Management could further enhance its capabilities by exploring innovative partnerships.\n\n## The Exodus Point Capital Management Scale Challenge\n\nExodus Point Capital Management, with its robust multi-strategy investment approach, faces intricate infrastructure challenges. These challenges are magnified by the firm's commitment to quickly adapt to market dynamics and efficiently manage vast datasets. The firm's current infrastructure, a blend of on-premises and cloud resources, struggles under the demands of batch training and real-time inference for live signal generation. The engineering team is tasked with maintaining a delicate balance between computational efficiency and speed, often hampered by the inherent limitations of their existing setup.\n\nKey pain points include the need for seamless data sourcing and feature engineering, as well as the efficient execution of NLP pipelines and risk models. The firm utilizes a heterogeneous stack, integrating Python for research with pandas/NumPy, scikit-learn/XGBoost, and PyTorch for deep learning tasks. However, this blend can lead to inefficiencies when scaling operations, particularly when real-time data processing and fine-tuning of domain-specific language models are required. Moreover, the existing data layer, comprising kdb+/q, Snowflake, Postgres, and S3/object storage, presents integration challenges that could be alleviated with a more unified infrastructure.\n\n## What Exodus Point Capital Management and Anyscale Could Build Together\n\nA collaboration between Exodus Point Capital Management and Anyscale could redefine how the firm approaches its technological constraints. By leveraging Anyscale's scalable computing solutions, the partnership would envision an infrastructure capable of seamlessly scaling batch inference and training workloads. Utilizing Ray, a distributed computing framework, would enable Exodus Point Capital Management to enhance their NLP and risk analytics pipelines, ensuring they remain agile and responsive to market changes.\n\nThrough this partnership, Exodus Point Capital Management could implement Ray Data for efficient data ingestion and preprocessing. Ray Train could be employed to optimize the training of systematic and quant models, allowing for faster iterations and improved model accuracy. Ray Serve, on the other hand, would facilitate real-time inference, critical for live signal generation and risk model deployment. This collaborative effort would not only address current pain points but also set a foundation for future advancements in AI-driven financial strategies.\n\n## The Exodus Point Capital Management × Anyscale Architecture\n\nShould Exodus Point Capital Management choose to engage with Anyscale, a robust and flexible architecture could be established. This architecture would be centered around Ray's distributed computing capabilities, seamlessly integrating with Exodus Point Capital Management's existing tech stack. The design would feature Ray clusters orchestrated across hybrid environments, allowing the firm to dynamically allocate resources based on workload demands.\n\nAt the data layer, Ray Data would interface with Exodus Point Capital Management's proprietary pipelines, ensuring efficient data flow from sources like Snowflake and S3. The training and deployment of models would be streamlined through Ray Train and Ray Serve, enabling the firm to maintain high-throughput processing and low-latency inference. This architecture would not only support existing applications but also provide a scalable foundation for future AI initiatives, such as fine-tuning large language models and developing advanced risk analytics.\n\n## Exodus Point Capital Management on Anyscale: What Becomes Possible\n\nBy partnering with Anyscale, Exodus Point Capital Management could unlock new levels of operational efficiency and innovation. The potential for real-time signal generation and enhanced risk analytics would empower the firm to make more informed investment decisions. Additionally, the streamlined infrastructure could facilitate faster research cycles and improved model accuracy, enabling the firm to capitalize on market opportunities more effectively.\n\nUltimately, the partnership would position Exodus Point Capital Management at the cutting edge of AI-driven financial services, paving the way for sustained competitive advantage and superior investor returns. Through this collaboration, the firm could not only address its current infrastructure challenges but also lay the groundwork for future success in an increasingly AI-centric finance landscape.");
+
+  // Blog toggle
+  function toggleBlog(i) {
+    const body = document.getElementById('blog-body-' + i);
+    const toggle = document.getElementById('blog-toggle-' + i);
+    const blogData = [window.__blog0, window.__blog1];
+    if (body.classList.contains('hidden')) {
+      if (!body.dataset.rendered) {
+        body.innerHTML = marked.parse(blogData[i] || '');
+        body.dataset.rendered = '1';
+        // Re-run hljs on any code blocks inside
+        body.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
+      }
+      body.classList.remove('hidden');
+      toggle.textContent = 'Collapse ↑';
+    } else {
+      body.classList.add('hidden');
+      toggle.textContent = 'Read article ↓';
+    }
+  }
+
+  // Syntax highlight code examples
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code').forEach(el => {
+      try { hljs.highlightElement(el); } catch(e) {}
+    });
+  });
+
+  // Mermaid — use JS API to avoid HTML-entity encoding issues
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: 'base',
+    flowchart: {
+      nodeSpacing: 30,
+      rankSpacing: 40,
+      padding: 6,
+      useMaxWidth: true,
+    },
+    themeVariables: {
+      primaryColor: '#EFF6FF',
+      primaryTextColor: '#1E40AF',
+      primaryBorderColor: '#93C5FD',
+      lineColor: '#60A5FA',
+      secondaryColor: '#F0FDF4',
+      tertiaryColor: '#FEF3C7',
+      fontSize: '11px',
+      nodePadding: '4',
+    },
+  });
+  (async () => {
+    const el = document.getElementById('mermaid-diagram');
+    if (!el) return;
+    try {
+      const diagram = "flowchart TD\n  subgraph DataSourcesIngestion\n    dataSources[Data Sources] --> ingestionLayer[Ingestion Layer]\n  end\n  subgraph RayComponents\n    ingestionLayer --> rayData[Ray Data]\n    rayData --> rayTrain[Ray Train]\n    rayTrain --> modelReg[Model Registry]\n    modelReg --> rayServe[Ray Serve]\n  end\n  subgraph ServingInference\n    rayServe --> inference[Inference Endpoint]\n  end\n  subgraph Applications\n    inference --> downstream[Downstream Consumers]\n  end\n  DataSourcesIngestion --> RayComponents\n  RayComponents --> ServingInference\n  ServingInference --> Applications\n";
+      const { svg } = await mermaid.render('arch', diagram);
+      el.innerHTML = svg;
+      const svgEl = el.querySelector('svg');
+      svgEl.removeAttribute('height');
+      svgEl.setAttribute('width', '100%');
+      svgEl.style.maxWidth = '100%';
+      svgEl.style.height = 'auto';
+    } catch (e) {
+      el.innerHTML = '<p style="color:#ef4444;font-size:0.875rem">Diagram rendering failed: ' + e.message + '</p>';
+    }
+  })();
+</script>
+</body>
+</html>
