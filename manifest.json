@@ -1,5 +1,22 @@
 [
   {
+    "slug": "exodus-point-capital-management",
+    "companyName": "Exodus Point Capital Management",
+    "industry": "Financial Services",
+    "createdBy": "conor@anyscale.com",
+    "createdAt": "2026-03-04T16:49:07.834Z",
+    "url": "https://anyscale-sales.github.io/prospect-microsites/exodus-point-capital-management/",
+    "prospectInput": {
+      "companyName": "Exodus Point Capital Management",
+      "companyDescription": "Business Overview\n\n\nExodusPoint Capital Management stands as a prominent player in the dynamic landscape of hedge funds, distinguished by its innovative approach to investment and rapid ascent in the financial industry. The firm swiftly made headlines by raising a staggering $8.5 billion in capital, marking one of the largest launches in hedge fund history. \nWith a multi-strategy investment philosophy blending quantitative models and fundamental research, ExodusPoint aimed to capitalize on market inefficiencies and deliver superior returns for its investors. H\\\nExodusPoint Capital Management was founded in early 2017 by Michael Gelband and Hyung Lee. Both Gelband and Lee were previously employees at Millennium Management, where Gelband was the Head of Fixed Income and Lee was the Head of Equities. \n",
+      "industry": "Financial Services",
+      "primaryUseCase": "Identified Use Cases: NLP / Signal Extraction: Parsing news feeds, earnings calls, macro data, central bank communications for alpha signals LLMs / GenAI: Internal productivity tools, research synthesis, document Q&A for investment and operations teams Systematic/Quant Model Training: Tree-based models, time-series forecasting, factor models, regression-based predictors Backtesting & Simulation: Historical strategy validation across large datasets Risk Analytics: Real-time and batch risk model inference across multi-asset portfolios Data Sourcing & Feature Engineering: Proprietary data pipelines for alternative data ingestion Workload Types:  Primarily batch inference and batch training, with some real-time inference for live signal generation. NLP pipelines are likely batch/offline. Risk models may require near-real-time inference. Fine-tuning of domain-specific LLMs is a likely near-term workload given the GenAI transformation mandate.",
+      "competitorContext": "Industry-typical for multi-manager hedge funds: Python for research, pandas/NumPy, scikit-learn/XGBoost, PyTorch for deep learning where used; often a mix of on-prem + colocated compute plus cloud burst (AWS common) for research backtests and model training.\nData layer commonly: kdb+/q, Snowflake, Postgres, S3/object storage, feature stores are less commonly “productized” than in tech companies but exist in advanced shops.\n",
+      "painPoints": [],
+      "rayExperience": "new"
+    }
+  },
+  {
     "slug": "duolingo",
     "companyName": "Duolingo",
     "industry": "Technology",
