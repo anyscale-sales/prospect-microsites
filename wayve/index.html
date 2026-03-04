@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wayve × Anyscale</title>
+  <link rel="icon" type="image/png" href="https://anyscale-sales.github.io/prospect-microsites/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .prose h1,.prose h2 { font-size:1.5rem; font-weight:700; margin:2rem 0 1rem; color:#111827; }
+    .prose h3 { font-size:1.125rem; font-weight:600; margin:1.5rem 0 0.5rem; color:#1f2937; }
+    .prose p { margin:1rem 0; }
+    .prose ul { list-style:disc; padding-left:1.5rem; margin:1rem 0; }
+    .prose li { margin:0.4rem 0; }
+    .prose strong { font-weight:600; }
+    .prose code { background:#f1f5f9; padding:0.1rem 0.35rem; border-radius:0.25rem; font-size:0.85em; font-family:monospace; }
+    .prose pre { background:#0f172a; padding:1.25rem; border-radius:0.75rem; overflow-x:auto; margin:1.25rem 0; }
+    .prose pre code { background:none; padding:0; color:#e2e8f0; font-size:0.85em; }
+    .prose blockquote { border-left:3px solid #3b82f6; padding-left:1rem; color:#6b7280; font-style:italic; margin:1.25rem 0; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="https://anyscale-sales.github.io/prospect-microsites/logo.png" alt="Anyscale" class="h-7 w-auto" />
+      <span class="font-semibold text-sm text-gray-900">wayve × Anyscale</span>
+    </div>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#opportunity" class="text-gray-500 hover:text-gray-900 transition-colors">Opportunity</a>
+      <a href="#deep-dives" class="text-gray-500 hover:text-gray-900 transition-colors">Deep Dives</a>
+      <a href="#architecture" class="text-gray-500 hover:text-gray-900 transition-colors">Architecture</a>
+      <a href="#code" class="text-gray-500 hover:text-gray-900 transition-colors">Code</a>
+      <a href="#next-steps" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-full transition-colors font-medium">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative pt-32 pb-28 bg-gray-950 text-white overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(59,130,246,0.25),transparent)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_60%,rgba(99,102,241,0.15),transparent)]"></div>
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-1.5 text-sm mb-8 backdrop-blur-sm">
+      <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+      Personalized for wayve
+    </div>
+    <h1 class="text-5xl md:text-7xl font-bold leading-none tracking-tight mb-6 max-w-4xl">wayve × Anyscale: Advancing Multimodal Model Training</h1>
+    <p class="text-xl md:text-2xl text-blue-100/80 mb-10 max-w-2xl leading-relaxed">Together, wayve and Anyscale enhance distributed training capabilities for automotive innovation, creating seamless integration of AI technologies in vehicle systems.</p>
+    <div class="flex flex-wrap gap-4">
+      <a href="#opportunity" class="inline-flex items-center px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-semibold transition-colors">
+        Explore the opportunity →
+      </a>
+      <a href="#next-steps" class="inline-flex items-center px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg font-semibold transition-colors backdrop-blur-sm">
+        Book a demo
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- POV / Opportunity -->
+<section id="opportunity" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+      <div class="lg:col-span-2">
+        <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">The Opportunity</p>
+        <div class="prose text-gray-700 leading-relaxed" id="pov-content"></div>
+      </div>
+      <div class="space-y-8 lg:pt-8">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Primary Use Case</p>
+          <p class="font-medium text-gray-800">multimodal model training</p>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Challenges We Solve</p>
+          <ul class="space-y-2"><li class="flex items-start gap-2 text-sm text-gray-600">
+      <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>distributed training
+    </li></ul>
+        </div>
+        <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
+          <p class="text-sm font-semibold text-blue-800 mb-1">Built on Ray</p>
+          <p class="text-xs text-blue-600 leading-relaxed">The unified open-source framework for distributed AI — data processing, training, and serving at any scale.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Posts -->
+<section id="deep-dives" class="py-24 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Deep Dives</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Technical Guides for Your Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(0)">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 1 · 5 min read</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">wayve × Anyscale: A Technical Blueprint for Multimodal Model Training</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how wayve and Anyscale could revolutionize multimodal model training through distributed computing, leveraging Ray and Azure for scalable solutions.</p>
+      <span class="text-sm font-medium text-blue-600" id="blog-toggle-0">Read article ↓</span>
+      <div id="blog-body-0" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
+    </div>
+  
+
+    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm cursor-pointer group" onclick="toggleBlog(1)">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Article 2 · 5 min read</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">wayve Could Solve Distributed Training at Scale with Anyscale</h3>
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">A look at how wayve and Anyscale could collaborate to address distributed training challenges in automotive multimodal model training.</p>
+      <span class="text-sm font-medium text-blue-600" id="blog-toggle-1">Read article ↓</span>
+      <div id="blog-body-1" class="hidden mt-6 pt-6 border-t border-gray-100 prose text-gray-700 text-sm leading-relaxed"></div>
+    </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- Architecture -->
+<section id="architecture" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-4">Recommended Architecture</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Your Reference Architecture</h2>
+    <p class="text-gray-500 max-w-2xl mb-12 leading-relaxed">Wayve and Anyscale have partnered to develop a robust, scalable architecture for multimodal model training in the automotive industry, leveraging Ray on Azure for distributed training. The architecture efficiently handles data ingestion, processing, and model serving, ensuring seamless integration with downstream applications.</p>
+    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 overflow-x-auto">
+      <div id="mermaid-diagram" class="flex justify-center min-h-[120px] items-center"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Code Examples -->
+<section id="code" class="py-24 bg-gray-950">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">Getting Started</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Curated Code Examples</h2>
+    <p class="text-gray-400 mb-12 max-w-2xl leading-relaxed">
+      Production-ready templates from the Anyscale library, selected for your use case.
+      Clone and run in minutes on Anyscale.
+    </p>
+    <div class="space-y-6">
+      
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">End-to-End LLM Workflow</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template demonstrates how Wayve can efficiently scale their multimodal model training for automotive applications using Anyscale. By leveraging Ray, Wayve's engineering team can eliminate cumbersome infrastructure code, enabling faster iterations and more robust model training processes.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/e2e-llm-workflows" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Wayve's current infrastructure setup without Ray
+import multiprocessing
+import boto3
+import os
+import time
+
+# Setup S3 client for manual checkpointing
+s3 = boto3.client('s3')
+
+# Function to process data
+def process_data(data):
+    try:
+        # Simulate data processing
+        result = complex_computation(data)
+        # Manual checkpoint to S3
+        s3.upload_file('/local/path/checkpoint', 'bucket', 'checkpoint')
+    except Exception as e:
+        print(f'Error processing data: {e}')
+        # Retry logic
+        for _ in range(3):
+            try:
+                result = complex_computation(data)
+                break
+            except Exception as e:
+                print(f'Retry failed: {e}')
+
+# Manual worker management
+pool = multiprocessing.Pool(processes=4)
+data_chunks = load_data()
+results = []
+for data in data_chunks:
+    result = pool.apply_async(process_data, (data,))
+    results.append(result)
+pool.close()
+pool.join()
+</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Wayve's streamlined workflow with Ray on Anyscale
+import ray
+
+# Initialize Ray
+ray.init()
+
+# Define remote function for data processing
+@ray.remote
+def process_data(data):
+    result = complex_computation(data)
+    return result  # auto-checkpoints, no manual S3 writes
+
+# Load data and distribute tasks
+# 8 GPUs, zero config changes
+results = ray.get([process_data.remote(data) for data in load_data()])
+
+# Ray handles retries and worker management automatically
+</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Fine-tune LLMs (Llama, Mistral)</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template is designed to streamline Wayve's multimodal model training by leveraging Anyscale's capabilities. By transitioning from cumbersome manual infrastructure management to a more efficient and scalable solution with Ray, Wayve's team can focus on innovating in automotive AI rather than dealing with operational overhead.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/fine-tune-llm_v2" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Wayve's current setup: manual scaling and error handling
+import multiprocessing
+import boto3
+import subprocess
+import os
+
+# Function to train model
+def train_model(data_chunk):
+    try:
+        # Placeholder for model training logic
+        pass
+    except Exception as e:
+        print(f&quot;Error: {e}&quot;)
+        return None
+
+# Manual job queue management
+job_queue = multiprocessing.Queue()
+for data_chunk in data_chunks:
+    job_queue.put(data_chunk)
+
+# Spin up workers manually
+processes = []
+for _ in range(4):
+    p = multiprocessing.Process(target=train_model, args=(job_queue.get(),))
+    processes.append(p)
+    p.start()
+
+# Checkpointing manually to S3
+s3 = boto3.client('s3')
+try:
+    for p in processes:
+        p.join()
+    # Placeholder for checkpoint logic
+    subprocess.run(['aws', 's3', 'cp', 'checkpoint', 's3://bucket/checkpoint'])
+except Exception as e:
+    print(f&quot;Failed to complete training: {e}&quot;)</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Wayve's optimized setup with Anyscale and Ray
+import ray
+from ray.train import TorchTrainer
+from ray.air.config import ScalingConfig
+
+# Define the training function
+@ray.remote
+def train_model(data_chunk):
+    # Placeholder for model training logic
+    pass
+
+# Configure and run the training
+trainer = TorchTrainer(
+    train_loop_per_worker=train_model,
+    scaling_config=ScalingConfig(num_workers=8)  # 8 GPUs, zero config changes
+)
+
+# Execute the training with automatic checkpointing
+result = trainer.fit()  # auto-checkpoints, no manual S3 writes
+
+# Retrieve results
+trained_model = ray.get(result)
+</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+      <div class="p-6 border-b border-gray-800">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="font-semibold text-white text-lg mb-1">Multimodal Search (Images + Text)</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">This template is designed to streamline Wayve's multimodal model training for automotive applications by leveraging Anyscale's powerful infrastructure. By transitioning from manual and error-prone scaling methods to Anyscale's efficient and automated approach, Wayve's engineering team can focus more on model innovation and less on infrastructure management.</p>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <a href="https://github.com/anyscale/templates/tree/main/ray-summit-multi-modal-search" target="_blank" rel="noopener"
+               class="text-xs font-medium px-3 py-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-lg transition-colors">
+              GitHub ↗
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-800">
+        <div>
+          <div class="px-4 py-2 bg-red-950 border-b border-gray-800">
+            <span class="text-xs font-semibold uppercase tracking-widest text-red-400">Before Ray</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Wayve's current infrastructure setup for scaling multimodal training
+import multiprocessing
+import boto3
+import os
+import time
+
+def train_model(data_chunk):
+    try:
+        # Simulate training
+        result = data_chunk * 2
+        # Manual checkpoint to disk
+        with open(f'/checkpoints/{data_chunk}.chk', 'w') as f:
+            f.write(str(result))
+        return result
+    except Exception as e:
+        print(f'Error: {e}')
+        return None
+
+# Manual worker management
+def worker_process():
+    while True:
+        try:
+            # Fetch work from queue
+            data_chunk = job_queue.get()
+            if data_chunk is None:
+                break
+            result = train_model(data_chunk)
+            if result is None:
+                # Retry logic
+                job_queue.put(data_chunk)
+        except Exception as e:
+            print(f'Worker failed: {e}')
+
+# Setup
+job_queue = multiprocessing.Queue()
+processes = [multiprocessing.Process(target=worker_process) for _ in range(4)]
+
+# Start processes
+for p in processes:
+    p.start()
+
+# Add jobs to queue
+for i in range(10):
+    job_queue.put(i)
+
+# Wait for all processes to finish
+for p in processes:
+    p.join()</code></pre>
+        </div>
+        <div>
+          <div class="px-4 py-2 bg-green-950 border-b border-gray-800 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-widest text-green-400">With Ray</span>
+            <span class="text-xs font-medium text-green-300 bg-green-900 px-2 py-0.5 rounded-full">Parallelized · Auto-scales · Fault tolerant</span>
+          </div>
+          <pre class="p-6 overflow-x-auto text-sm"><code class="language-python text-gray-300"># Wayve's optimized training with Anyscale and Ray
+import ray
+from ray import train
+
+# Define Ray remote training function
+@ray.remote
+def train_model(data_chunk):
+    # Simulate training
+    result = data_chunk * 2
+    return result
+
+# Initialize Ray
+ray.init()
+
+# Define dataset
+data_chunks = list(range(10))
+
+# Execute training in parallel across 8 workers
+results = ray.get([train_model.remote(chunk) for chunk in data_chunks])
+
+# Results are automatically collected, no manual checkpoints needed
+print(results)  # auto-checkpoints, no manual S3 writes</code></pre>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- Next Steps -->
+<section id="next-steps" class="py-24 bg-blue-600 text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-200 mb-4">Next Steps</p>
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+      Ready to accelerate wayve's AI journey?
+    </h2>
+    <p class="text-xl text-blue-100 mb-14 max-w-2xl mx-auto leading-relaxed">
+      Join leading AI teams who scaled from prototype to production with Anyscale.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+      <a href="https://www.anyscale.com/contact" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Talk to an Engineer</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">Get a technical walkthrough of your specific use case</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Schedule a call →</span>
+      </a>
+      <a href="https://console.anyscale.com/" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Start Free Trial</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">Run your first workload on Anyscale today — no setup required</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Get started →</span>
+      </a>
+      <a href="https://www.anyscale.com/demo" target="_blank" rel="noopener"
+         class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-6 text-left transition-colors group">
+        <p class="font-semibold text-lg mb-2">Book a Demo</p>
+        <p class="text-blue-100 text-sm leading-relaxed mb-4">See how teams like yours build and scale with Ray on Anyscale</p>
+        <span class="text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Book now →</span>
+      </a>
+    </div>
+    <p class="text-blue-200 text-sm">
+      Questions? Email <a href="mailto:sales@anyscale.com" class="underline hover:text-white">sales@anyscale.com</a>
+    </p>
+  </div>
+</section>
+
+<script>
+  // Blog post content
+  window.__blog0 = "## Introduction to wayve's Multimodal Model Training Challenges\n\nwayve, an innovative company in the automotive industry, is at the forefront of developing autonomous vehicle technology. As wayve explores scalable solutions for multimodal model training, they face significant challenges in distributed training. With a current setup on Azure, wayve seeks to optimize their training processes to handle vast datasets and complex models.\n\n## Why wayve Would Consider Anyscale\n\nAnyscale, with its robust Ray framework, could offer wayve a powerful solution to these challenges. Ray is designed for distributed computing, making it an ideal candidate for accelerating multimodal model training. This partnership would enable wayve to leverage Ray’s capabilities to seamlessly distribute training workloads across multiple nodes, significantly reducing training times and improving model performance.\n\n## How wayve × Anyscale Would Handle Data at Scale\n\nThe primary pain point for wayve is managing the scale of data required for training multimodal models. A collaboration with Anyscale would allow wayve to utilize Ray’s efficient data handling capabilities to process large datasets in parallel. This approach would enable wayve to scale their operations without compromising on speed or accuracy.\n\n```python\nimport ray\n\n# Initialize Ray\nray.init()\n\n@ray.remote\ndef train_model(data_partition):\n    # Simulated training function\n    model = \"model_trained_on_\" + str(data_partition)\n    return model\n\n# Simulate data partitions for distributed training\ndata_partitions = [\"data_chunk_1\", \"data_chunk_2\", \"data_chunk_3\"]\n\n# Distribute training tasks across Ray cluster\ntrained_models = ray.get([train_model.remote(part) for part in data_partitions])\n\n# The above code would enable wayve to distribute their model training across multiple nodes,\n# optimizing compute resource usage and reducing overall training time.\n```\n\n## Scaling wayve's Training Infrastructure with Anyscale\n\nBy integrating Ray with their existing Azure setup, wayve could achieve a more flexible and scalable infrastructure. This would be particularly beneficial for handling the peaks and troughs of compute demand typical in model training scenarios. The ability to elastically scale resources in response to workload demands would ensure that wayve can maintain high efficiency and cost-effectiveness.\n\n## The wayve × Anyscale Vision for Future Innovations\n\nThe partnership envisions a future where wayve can push the boundaries of autonomous driving technology. By utilizing Anyscale’s expertise in distributed computing, wayve could accelerate their R&D efforts, leading to faster iterations and more advanced autonomous vehicle models.\n\n## Proposed Next Steps for wayve and Anyscale\n\n1. **Feasibility Study:** Conduct a joint feasibility study to assess the integration of Ray with wayve’s current Azure setup, focusing on potential performance gains and cost savings.\n\n2. **Pilot Project:** Initiate a pilot project to test the distributed training of a specific multimodal model on Ray, gathering data on its efficiency and scalability.\n\n3. **Technical Workshops:** Organize technical workshops for wayve’s engineering team to gain deep insights into Ray’s capabilities and best practices for distributed model training.\n";
+    window.__blog1 = "## wayve × Anyscale: A Vision for Distributed Training\n\nIn the rapidly evolving automotive industry, companies like wayve are at the forefront of developing cutting-edge technologies for autonomous vehicles. With the increasing complexity of multimodal models that incorporate data from various sensors and inputs, wayve faces significant challenges related to distributed training at scale. This is where Anyscale, leveraging the power of Ray, could offer innovative solutions to streamline and enhance wayve's model training processes.\n\n## The Scale of wayve's Challenge\n\nwayve operates in an industry where the volume and variety of data are vast. From LiDAR and camera feeds to GPS and other sensor data, the need for robust, scalable training infrastructure is paramount. Currently utilizing Azure, wayve manages extensive data processing and model training tasks. However, the exponential growth of data and the complexity of models necessitate a more flexible and scalable solution.\n\n## How wayve and Anyscale Could Address Distributed Training\n\nAnyscale, built on Ray, offers a framework that could address wayve's pain points by enabling seamless distributed computing. By leveraging Ray, wayve could distribute the training of their multimodal models across numerous nodes, thus significantly reducing training times and improving efficiency. This approach would enable wayve to scale up their operations without the burden of managing the underlying infrastructure complexities.\n\n### Python Example: Distributed Training with Ray\n\nBelow is a hypothetical example of how wayve could use Ray to distribute model training tasks. This code snippet demonstrates how a large model could be trained across multiple nodes:\n\n```python\nimport ray\n\n# Initialize Ray\nray.init(ignore_reinit_error=True)\n\n@ray.remote\ndef train_model_chunk(data_chunk):\n    # Simulate a training process on a chunk of data\n    model = complex_model()\n    model.train(data_chunk)\n    return model.get_weights()\n\n# Assume `data_chunks` is a list of data segments\ndata_chunks = [chunk1, chunk2, chunk3, chunk4]\n\n# Distribute the training tasks across available resources\nfuture_weights = [train_model_chunk.remote(chunk) for chunk in data_chunks]\n\n# Gather the results\nweights = ray.get(future_weights)\n\n# Combine weights to update the global model\nglobal_model_weights = aggregate_weights(weights)\n\n# This snippet would allow wayve to train different segments of a dataset in parallel,\n# significantly speeding up the training process by utilizing distributed computing.\n```\n\n## Envisioning the wayve × Anyscale Collaboration\n\nWith Anyscale's capabilities, wayve could envision a future where distributed training becomes more efficient, scalable, and cost-effective. By utilizing Ray's actor model, wayve could manage stateful computations and model parallelism seamlessly. This partnership would not only optimize current workflows but also pave the way for more advanced, real-time model iterations.\n\n## Proposed Next Steps for wayve and Anyscale\n\n1. **Proof of Concept (PoC) Development**: The first step would be to collaboratively develop a PoC to test Ray's capabilities on wayve's existing Azure infrastructure. This would involve setting up a small-scale distributed training environment and evaluating its impact on training times and resource utilization.\n\n2. **Integration Strategy Workshop**: Conduct workshops to outline a detailed integration strategy. This would include technical deep dives into wayve's current architecture and discussions on how Ray could be effectively integrated.\n\n3. **Scalability Testing and Optimization**: Once the initial integration is successful, the next phase would involve testing the scalability of the solution. This step would focus on optimizing resource allocation and ensuring that the distributed training setup can handle increasing data volumes and model complexities.\n\nBy following these steps, wayve and Anyscale could unlock new potential in distributed training, positioning wayve at the forefront of automotive innovation.";
+
+  // Render POV markdown
+  document.getElementById('pov-content').innerHTML = marked.parse("In the rapidly evolving landscape of automotive technology, the integration of artificial intelligence is reshaping our understanding of vehicle autonomy. Companies at the forefront of this revolution, like wayve, are pioneering the development of advanced driver-assistance systems (ADAS) that leverage cutting-edge multimodal model training. As the demand for smarter, safer, and more adaptable vehicles grows, wayve stands poised to redefine what is possible in autonomous driving. However, unlocking this potential necessitates overcoming significant technological challenges, particularly in the realm of distributed training infrastructure.\n\n## The wayve Scale Challenge\n\nwayve's engineering team encounters significant hurdles in scaling their multimodal model training processes. As they strive to enhance their ADAS capabilities, the complexity of managing large-scale distributed training becomes increasingly apparent. Currently, their infrastructure on Azure presents limitations, particularly concerning resource allocation and the orchestration of data-intensive tasks. These constraints hinder their ability to efficiently train sophisticated models that integrate various data types, such as video, radar, and lidar inputs. The need for a more robust, scalable solution is evident as wayve seeks to accelerate innovation and deployment timelines.\n\nThe primary pain point lies in distributed training, where wayve's current setup struggles to balance computational load and data management effectively. Their team requires a system capable of dynamically scaling resources to meet the demands of extensive model training, ensuring seamless integration and processing of multimodal data. Without a solution that addresses these challenges, wayve risks falling behind in the fast-paced race towards autonomous vehicle excellence.\n\n## What wayve and Anyscale Could Build Together\n\nIn collaboration, wayve and Anyscale could engineer a transformative solution tailored to overcome these infrastructure challenges. By leveraging Anyscale's expertise in distributed computing and the powerful capabilities of Ray, a joint effort could pave the way for a resilient and scalable architecture. Ray Data could be employed to streamline the ingestion and preprocessing of diverse data streams, ensuring efficient handling of video, radar, and lidar inputs critical to wayve's model training.\n\nFurthermore, Ray Train could facilitate the distributed training of wayve's complex models by optimizing resource allocation and parallelizing tasks across a dynamic computing environment. This would enable wayve to execute large-scale model training with improved efficiency and reduced overhead. Additionally, Ray Serve could be utilized to deploy trained models in a scalable and reliable manner, ensuring robust performance in real-world scenarios. Together, these components would form a comprehensive solution, positioning wayve to achieve unprecedented advancements in vehicle autonomy.\n\n## The wayve × Anyscale Architecture\n\nThe envisioned architecture for wayve on Anyscale would be a robust and flexible system designed to meet the demands of multimodal model training. At its core, Ray's distributed computing framework would underpin the entire infrastructure, seamlessly integrating with wayve's existing Azure environment. This integration would allow for elastic scaling, dynamically adjusting computing resources based on workload demands to optimize performance and cost-efficiency.\n\nData pipelines would be established using Ray Data, enabling efficient preprocessing and management of the diverse data inputs essential to wayve's models. Ray Train would coordinate distributed training tasks, optimizing resource distribution and minimizing bottlenecks. The architecture would support a modular design, allowing wayve's engineers to iterate rapidly and deploy updates seamlessly. Through Ray Serve, trained models would be deployed reliably, ensuring high availability and low latency for real-time ADAS applications.\n\n## wayve on Anyscale: What Becomes Possible\n\nBy embracing this potential partnership, wayve could unlock a new era of innovation and efficiency in autonomous driving technology. With a scalable and resilient infrastructure, their team would be empowered to push the boundaries of multimodal model training, accelerating the development of advanced ADAS features. This capability would not only enhance the performance of wayve's autonomous systems but also position them as a leader in the automotive industry, driving the next generation of vehicle autonomy.\n\nThe collaboration with Anyscale would enable wayve to achieve faster model iteration cycles, reduce time-to-market for new technologies, and ultimately deliver safer, smarter vehicles. As a result, wayve could better meet the demands of a rapidly evolving market, ensuring their solutions remain at the forefront of automotive innovation.");
+
+  // Blog toggle
+  function toggleBlog(i) {
+    const body = document.getElementById('blog-body-' + i);
+    const toggle = document.getElementById('blog-toggle-' + i);
+    const blogData = [window.__blog0, window.__blog1];
+    if (body.classList.contains('hidden')) {
+      if (!body.dataset.rendered) {
+        body.innerHTML = marked.parse(blogData[i] || '');
+        body.dataset.rendered = '1';
+        // Re-run hljs on any code blocks inside
+        body.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
+      }
+      body.classList.remove('hidden');
+      toggle.textContent = 'Collapse ↑';
+    } else {
+      body.classList.add('hidden');
+      toggle.textContent = 'Read article ↓';
+    }
+  }
+
+  // Syntax highlight code examples
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre code').forEach(el => {
+      try { hljs.highlightElement(el); } catch(e) {}
+    });
+  });
+
+  // Mermaid — use JS API to avoid HTML-entity encoding issues
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: 'base',
+    flowchart: {
+      nodeSpacing: 30,
+      rankSpacing: 40,
+      padding: 6,
+      useMaxWidth: true,
+    },
+    themeVariables: {
+      primaryColor: '#EFF6FF',
+      primaryTextColor: '#1E40AF',
+      primaryBorderColor: '#93C5FD',
+      lineColor: '#60A5FA',
+      secondaryColor: '#F0FDF4',
+      tertiaryColor: '#FEF3C7',
+      fontSize: '11px',
+      nodePadding: '4',
+    },
+  });
+  (async () => {
+    const el = document.getElementById('mermaid-diagram');
+    if (!el) return;
+    try {
+      const diagram = "flowchart TD\n  subgraph DataSourcesIngestion\n    dataSource1[Sensor Data]\n    dataSource2[Simulation Data]\n    ingestor[Data Ingestor]\n    dataSource1 --> ingestor\n    dataSource2 --> ingestor\n  end\n\n  subgraph RayComponents\n    rayData[Ray Data]\n    rayTrain[Ray Train]\n    rayServe[Ray Serve]\n    ingestor --> rayData\n    rayData --> rayTrain\n    rayTrain --> rayServe\n  end\n\n  subgraph ModelRegistryStorage\n    modelReg[Model Registry]\n    rayTrain --> modelReg\n  end\n\n  subgraph ServingInference\n    serveEndpoint[Inference Endpoint]\n    rayServe --> serveEndpoint\n  end\n\n  subgraph DownstreamConsumers\n    consumerApp1[ADAS System]\n    consumerApp2[Navigation System]\n    serveEndpoint --> consumerApp1\n    serveEndpoint --> consumerApp2\n  end";
+      const { svg } = await mermaid.render('arch', diagram);
+      el.innerHTML = svg;
+      const svgEl = el.querySelector('svg');
+      svgEl.removeAttribute('height');
+      svgEl.setAttribute('width', '100%');
+      svgEl.style.maxWidth = '100%';
+      svgEl.style.height = 'auto';
+    } catch (e) {
+      el.innerHTML = '<p style="color:#ef4444;font-size:0.875rem">Diagram rendering failed: ' + e.message + '</p>';
+    }
+  })();
+</script>
+</body>
+</html>
