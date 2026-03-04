@@ -1,5 +1,24 @@
 [
   {
+    "slug": "wayve",
+    "companyName": "wayve",
+    "industry": "Automotive",
+    "createdBy": "franco martins",
+    "createdAt": "2026-03-04T17:15:33.316Z",
+    "url": "https://anyscale-sales.github.io/prospect-microsites/wayve/",
+    "prospectInput": {
+      "companyName": "wayve",
+      "companyDescription": "adas",
+      "industry": "Automotive",
+      "primaryUseCase": "multimodal model training",
+      "competitorContext": "Azure",
+      "painPoints": [
+        "distributed training"
+      ],
+      "rayExperience": "new"
+    }
+  },
+  {
     "slug": "exodus-point-capital-management",
     "companyName": "Exodus Point Capital Management",
     "industry": "Financial Services",
