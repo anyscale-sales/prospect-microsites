@@ -1,5 +1,22 @@
 [
   {
+    "slug": "duolingo",
+    "companyName": "Duolingo",
+    "industry": "Technology",
+    "createdBy": "conor@anyscale.com",
+    "createdAt": "2026-03-04T16:26:09.719Z",
+    "url": "https://anyscale-sales.github.io/prospect-microsites/duolingo/",
+    "prospectInput": {
+      "companyName": "Duolingo",
+      "companyDescription": "Duolingo, a global leader in mobile language learning, has embarked on an ambitious \"AI-first\" strategic transformation, fundamentally embedding artificial intelligence across its core operations. This pivot, likened by its CEO to their successful mobile-first strategy, aims to significantly scale educational impact, deepen user personalization, and drive operational efficiencies. The company's extensive AI initiatives span dynamic content creation, adaptive learning experiences, sophisticated assessment and fraud detection, and revenue-driving ad optimization.\nWhile Duolingo demonstrates a strong commitment to AI and leverages a robust AWS-based infrastructure, its rapid growth and increasing reliance on advanced models, particularly large language models (LLMs), present inherent infrastructure and operational challenges. These include the escalating computational costs associated with large-scale model training and real-time inference, the complexities of managing a diverse portfolio of distributed machine learning (ML) workloads, and the continuous demand for accelerated experimentation and iteration cycles to maintain product leadership.\n",
+      "industry": "Technology",
+      "primaryUseCase": " Distributed LLM evaluation/tuning and elastic batch pipelines (data prep + training) with a path to scalable inference",
+      "competitorContext": "Python-centric ML stack (likely PyTorch) with cloud compute and a mix of batch data tooling + custom services for inference; increasing LLM workload intensity across product features.",
+      "painPoints": [],
+      "rayExperience": "new"
+    }
+  },
+  {
     "slug": "prove",
     "companyName": "Prove",
     "industry": "Technology",
